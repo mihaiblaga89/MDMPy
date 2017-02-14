@@ -8,7 +8,6 @@ Date : 14/02/2017
 # -*- coding: utf-8 -*-
 import os.path
 import sys
-from pprint import pprint
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'site-packages')))
 import cherrypy
@@ -40,14 +39,15 @@ def setUpModule():
     cherrypy.engine.start()
 setup_module = setUpModule
 
+
 def tearDownModule():
     cherrypy.engine.exit()
 teardown_module = tearDownModule
 
+
 class TestCherryPyApp(BaseCherryPyTestCase):
     def test_index(self):
         response = self.request(path='/Home/', app_path='/Home')
-        pprint(vars(response))
         self.assertEqual(response.output_status, '200 OK')
         # response body is wrapped into a list internally by CherryPy
         # self.assertEqual(response.body, ['hello world'])

@@ -751,3 +751,13 @@ INFO:cherrypy.error:[14/Feb/2017:20:00:42] ENGINE Stopped thread '_TimeoutMonito
 INFO:cherrypy.error:[14/Feb/2017:20:00:42] ENGINE Bus STOPPED
 INFO:cherrypy.error:[14/Feb/2017:20:00:42] ENGINE Bus EXITING
 INFO:cherrypy.error:[14/Feb/2017:20:00:42] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:20:12:13] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:20:12:13] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:20:12:13] ENGINE Bus STARTED
+INFO:cherrypy.error.4427568272:[14/Feb/2017:20:12:13]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.access.4427568272:127.0.0.1 - - [14/Feb/2017:20:12:13] "GET /Home/ HTTP/1.1" 200 898 "" ""
+INFO:cherrypy.error:[14/Feb/2017:20:12:13] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:20:12:13] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:20:12:13] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:20:12:13] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:20:12:13] ENGINE Bus EXITED
