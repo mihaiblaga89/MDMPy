@@ -1,0 +1,17 @@
+
+
+#welcome-header
+{
+    font-size: 50px;
+    color: white;
+    margin: 0px auto 0 auto;
+    width: 500px;
+}
+
+#welcome-text
+{
+    font-size: 20px;
+    color: white;
+    margin: 20px auto 0 auto;
+    width: 700px;
+}

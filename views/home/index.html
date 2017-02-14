@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="/static/css/views/home/index.css"/>
+{% endblock %}
+
+{% block body %}
+<div class="pure-u-1-1" id="welcome-header">
+  Hello!
+  <div id="welcome-text">
+      <form method="get" action="search">
+              <input type="text" value="8" name="query" />
+              <button type="submit">Give it now!</button>
+            </form>
+      This is content from Views/Home/Index.html. <br/><br/>
+      The outer template is Views/Layout.html.
+  </div>
+</div>
+{% endblock %}
+

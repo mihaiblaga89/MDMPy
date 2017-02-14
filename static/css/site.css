@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+}
+
+div {
+    -webkit-box-sizing: border-box; /* safari, chrome */
+    -moz-box-sizing: border-box; /* firefox */
+    box-sizing: border-box; /* ie8+, opera */
+}
+
+#top-section
+{
+    height: 130px;
+}
+
+#middle-section
+{
+    background-color: #7887AB;
+    min-height: 500px;
+    margin: 0;
+    padding: 100px 0;
+}
+

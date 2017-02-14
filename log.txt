@@ -1,0 +1,520 @@
+INFO:cherrypy.error:[14/Feb/2017:12:38:46] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:12:38:46] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:12:38:47] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[14/Feb/2017:12:38:47] ENGINE Bus STARTED
+INFO:cherrypy.error.4329385360:[14/Feb/2017:12:38:57]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:38:57] "GET / HTTP/1.1" 200 531 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:38:57] "GET /static/css/site.css HTTP/1.1" 200 347 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:38:57] "GET /static/css/views/home/index.css HTTP/1.1" 200 214 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:38:58] "GET /favicon.ico HTTP/1.1" 200 1406 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:39:10] "GET / HTTP/1.1" 200 531 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:39:10] "GET /favicon.ico HTTP/1.1" 200 1406 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:40:54] "GET / HTTP/1.1" 200 608 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:40:54] "GET /favicon.ico HTTP/1.1" 200 1406 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:41:08] "GET / HTTP/1.1" 200 612 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:41:08] "GET /favicon.ico HTTP/1.1" 200 1406 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:41:15] "GET / HTTP/1.1" 200 612 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:41:15] "GET /favicon.ico HTTP/1.1" 200 1406 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:41:16] "GET / HTTP/1.1" 200 612 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:41:16] "GET /favicon.ico HTTP/1.1" 200 1406 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:41:36] "GET / HTTP/1.1" 200 612 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:41:36] "GET /static/css/pure-min.css HTTP/1.1" 200 18943 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:41:36] "GET /favicon.ico HTTP/1.1" 200 1406 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:43:38] "GET / HTTP/1.1" 200 719 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:43:38] "GET /favicon.ico HTTP/1.1" 200 1406 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:44:55] "GET / HTTP/1.1" 200 719 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:45:12] "GET / HTTP/1.1" 200 719 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:45:12] "GET /favicon.ico HTTP/1.1" 200 1406 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:45:14] "GET / HTTP/1.1" 200 719 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:45:14] "GET /favicon.ico HTTP/1.1" 200 1406 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:45:19] "GET / HTTP/1.1" 200 719 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:45:19] "GET /favicon.ico HTTP/1.1" 200 1406 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:45:29] "GET / HTTP/1.1" 200 719 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:45:29] "GET /static/css/site.css HTTP/1.1" 200 347 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:45:29] "GET /static/css/pure-min.css HTTP/1.1" 200 18943 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:45:29] "GET /static/css/views/home/index.css HTTP/1.1" 200 214 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:45:29] "GET /favicon.ico HTTP/1.1" 200 1406 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:45:37] "GET / HTTP/1.1" 200 719 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:45:37] "GET /favicon.ico HTTP/1.1" 200 1406 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:49:42] "GET / HTTP/1.1" 200 719 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:49:42] "GET /favicon.ico HTTP/1.1" 200 1406 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:59:22] "GET / HTTP/1.1" 200 737 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:59:36] "GET / HTTP/1.1" 200 737 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:59:37] "GET /favicon.ico HTTP/1.1" 200 1406 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:12:59:59] "GET / HTTP/1.1" 200 745 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:13:00:01] "GET / HTTP/1.1" 200 745 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:13:00:02] "GET / HTTP/1.1" 200 745 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:13:00:03] "GET / HTTP/1.1" 200 745 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:13:00:04] "GET / HTTP/1.1" 200 745 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:13:00:06] "GET / HTTP/1.1" 200 745 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:14:32:59] "GET / HTTP/1.1" 200 898 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:14:33:00] "GET /static/css/views/home/index.css HTTP/1.1" 200 214 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:14:33:00] "GET /static/css/site.css HTTP/1.1" 200 347 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:14:33:02] "GET /search?query=8 HTTP/1.1" 404 513 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:14:34:41] "GET /search?query=8 HTTP/1.1" 404 513 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4329385360:127.0.0.1 - - [14/Feb/2017:14:34:43] "GET /search?query=8 HTTP/1.1" 404 513 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error:[14/Feb/2017:14:35:17] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:14:35:17] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:14:35:17] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[14/Feb/2017:14:35:17] ENGINE Bus STARTED
+INFO:cherrypy.error.4323330640:[14/Feb/2017:14:35:20]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.access.4323330640:127.0.0.1 - - [14/Feb/2017:14:35:20] "GET /search?query=8 HTTP/1.1" 404 513 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4323330640:127.0.0.1 - - [14/Feb/2017:14:35:21] "GET /search?query=8 HTTP/1.1" 404 513 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4323330640:127.0.0.1 - - [14/Feb/2017:14:35:23] "GET /search?query=8 HTTP/1.1" 404 513 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4323330640:127.0.0.1 - - [14/Feb/2017:14:35:28] "GET /search?query=8 HTTP/1.1" 404 513 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error:[14/Feb/2017:14:39:09] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:14:39:09] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:14:39:09] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[14/Feb/2017:14:39:09] ENGINE Bus STARTED
+INFO:cherrypy.error.4409706384:[14/Feb/2017:14:46:37]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.access.4409706384:127.0.0.1 - - [14/Feb/2017:14:46:37] "GET /Home HTTP/1.1" 301 109 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4409706384:127.0.0.1 - - [14/Feb/2017:14:46:37] "GET /Home/ HTTP/1.1" 200 898 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4409707088:127.0.0.1 - - [14/Feb/2017:14:46:41] "GET / HTTP/1.1" 200 898 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4409707088:127.0.0.1 - - [14/Feb/2017:14:46:43] "GET /search?query=8 HTTP/1.1" 404 513 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error.4409706384:[14/Feb/2017:15:03:32] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=0434388aa57f53b559a5eba565fc25b236acd2e7
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4409706384:[14/Feb/2017:15:03:32] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 263, in __call__
+    ct.params['charset'] = self.find_acceptable_charset()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 172, in find_acceptable_charset
+    if encoder(self.default_encoding):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 113, in encode_string
+    for chunk in self.body:
+TypeError: 'bool' object is not iterable
+INFO:cherrypy.access.4409706384:127.0.0.1 - - [14/Feb/2017:15:03:32] "GET /Home/search HTTP/1.1" 500 1525 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4409706384:127.0.0.1 - - [14/Feb/2017:15:03:43] "GET /Home/searchs HTTP/1.1" 404 513 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4409706384:127.0.0.1 - - [14/Feb/2017:15:04:19] "GET /Home/search?q=da HTTP/1.1" 404 513 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error.4409706384:[14/Feb/2017:15:05:27] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=cb46c0588a06770bbee8eb0dd762fec74811bd98
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4409706384:[14/Feb/2017:15:05:27] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 16, in search
+    result = IGDB.Request.get(q="watchdogs")
+TypeError: unbound method get() must be called with Request instance as first argument (got nothing instead)
+INFO:cherrypy.access.4409706384:127.0.0.1 - - [14/Feb/2017:15:05:27] "GET /Home/search?query=da HTTP/1.1" 500 1570 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error.4409706384:[14/Feb/2017:15:06:12] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=9fcd2b4f18b2e087d9a3e306ba2044d9cf5d2efc
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4409706384:[14/Feb/2017:15:06:12] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 16, in search
+    result = IGDB.Request.get(q="watchdogs")
+TypeError: unbound method get() must be called with Request instance as first argument (got nothing instead)
+INFO:cherrypy.access.4409706384:127.0.0.1 - - [14/Feb/2017:15:06:12] "GET /Home/search?query=da HTTP/1.1" 500 1570 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error.4409706384:[14/Feb/2017:15:06:14] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=6ea2f615f686904fd25a85f9b2019fee43a92fca
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4409706384:[14/Feb/2017:15:06:14] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 16, in search
+    result = IGDB.Request.get(q="watchdogs")
+TypeError: unbound method get() must be called with Request instance as first argument (got nothing instead)
+INFO:cherrypy.access.4409706384:127.0.0.1 - - [14/Feb/2017:15:06:14] "GET /Home/search?query=da HTTP/1.1" 500 1570 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error:[14/Feb/2017:15:06:29] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:15:06:29] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:15:06:29] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[14/Feb/2017:15:06:29] ENGINE Bus STARTED
+INFO:cherrypy.error.4373886864:[14/Feb/2017:15:06:31]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.error.4373886864:[14/Feb/2017:15:06:31] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=c0a5a46d8936cc3f0196a628afecd9785fbe6772
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4373886864:[14/Feb/2017:15:06:31] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 16, in search
+    result = IGDB.Request.get(q="watchdogs")
+TypeError: unbound method get() must be called with Request instance as first argument (got nothing instead)
+INFO:cherrypy.access.4373886864:127.0.0.1 - - [14/Feb/2017:15:06:31] "GET /Home/search?query=da HTTP/1.1" 500 1570 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error.4373886864:[14/Feb/2017:15:06:32] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=d658ff6bf757f1f307277b51e894366ebcb1770f
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4373886864:[14/Feb/2017:15:06:32] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 16, in search
+    result = IGDB.Request.get(q="watchdogs")
+TypeError: unbound method get() must be called with Request instance as first argument (got nothing instead)
+INFO:cherrypy.access.4373886864:127.0.0.1 - - [14/Feb/2017:15:06:32] "GET /Home/search?query=da HTTP/1.1" 500 1570 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error.4373886864:[14/Feb/2017:15:06:34] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=45ab16c938d425bac03744e79d729802bc07a787
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4373886864:[14/Feb/2017:15:06:34] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 16, in search
+    result = IGDB.Request.get(q="watchdogs")
+TypeError: unbound method get() must be called with Request instance as first argument (got nothing instead)
+INFO:cherrypy.access.4373886864:127.0.0.1 - - [14/Feb/2017:15:06:34] "GET /Home/search?query=da HTTP/1.1" 500 1570 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error.4373886864:[14/Feb/2017:15:20:47] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=db2851f71385e370b52e0e62cbbca64998100d3a
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4373886864:[14/Feb/2017:15:20:47] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 16, in search
+    result = lib.IGDB.Request.get(q="watchdogs")
+TypeError: unbound method get() must be called with Request instance as first argument (got nothing instead)
+INFO:cherrypy.access.4373886864:127.0.0.1 - - [14/Feb/2017:15:20:47] "GET /Home/search?query=da HTTP/1.1" 500 1574 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error.4373886864:[14/Feb/2017:15:21:39] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=db6c7d00efda59e62f798addcc977af5bf1ccdbe
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4373886864:[14/Feb/2017:15:21:39] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 16, in search
+    result = lib.IGDB.Request.get(q="watchdogs")
+TypeError: unbound method get() must be called with Request instance as first argument (got nothing instead)
+INFO:cherrypy.access.4373886864:127.0.0.1 - - [14/Feb/2017:15:21:39] "GET /Home/search?query=da HTTP/1.1" 500 1574 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error.4373886864:[14/Feb/2017:15:22:29] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=bbbef8fe870b134253ffe3ec9e1a79109df3b17a
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4373886864:[14/Feb/2017:15:22:29] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 16, in search
+    IGDB = lib.IGDB.Request
+TypeError: unbound method get() must be called with Request instance as first argument (got nothing instead)
+INFO:cherrypy.access.4373886864:127.0.0.1 - - [14/Feb/2017:15:22:29] "GET /Home/search?query=da HTTP/1.1" 500 1553 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error.4373886864:[14/Feb/2017:15:23:17] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=8316b95a5685c210f28f9001d9a14d809cf9692d
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4373886864:[14/Feb/2017:15:23:17] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 16, in search
+    result = IGDB.Request.get(q="watchdogs")
+TypeError: unbound method get() must be called with Request instance as first argument (got nothing instead)
+INFO:cherrypy.access.4373886864:127.0.0.1 - - [14/Feb/2017:15:23:17] "GET /Home/search?query=da HTTP/1.1" 500 1570 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error.4373886864:[14/Feb/2017:15:23:19] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=db93e3eff43c3bfd5b6634c79adae67039a7116c
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4373886864:[14/Feb/2017:15:23:19] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 16, in search
+    result = IGDB.Request.get(q="watchdogs")
+TypeError: unbound method get() must be called with Request instance as first argument (got nothing instead)
+INFO:cherrypy.access.4373886864:127.0.0.1 - - [14/Feb/2017:15:23:19] "GET /Home/search?query=da HTTP/1.1" 500 1570 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error:[14/Feb/2017:15:23:30] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:15:23:30] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:15:23:31] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[14/Feb/2017:15:23:31] ENGINE Bus STARTED
+INFO:cherrypy.error.4351297424:[14/Feb/2017:15:23:33]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.access.4351297424:127.0.0.1 - - [14/Feb/2017:15:23:34] "GET /Home/search?query=da HTTP/1.1" 200 - "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4351297424:127.0.0.1 - - [14/Feb/2017:15:25:26] "GET /Home/search?query=da HTTP/1.1" 200 - "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error:[14/Feb/2017:15:25:41] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:15:25:41] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:15:25:41] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[14/Feb/2017:15:25:41] ENGINE Bus STARTED
+INFO:cherrypy.error.4354877328:[14/Feb/2017:15:25:42]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.error.4354877328:[14/Feb/2017:15:25:43] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=3536e472d9a8742ce4937562718cf882bcbb1f10
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4354877328:[14/Feb/2017:15:25:43] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 263, in __call__
+    ct.params['charset'] = self.find_acceptable_charset()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 172, in find_acceptable_charset
+    if encoder(self.default_encoding):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 113, in encode_string
+    for chunk in self.body:
+TypeError: 'UnirestResponse' object is not iterable
+INFO:cherrypy.access.4354877328:127.0.0.1 - - [14/Feb/2017:15:25:43] "GET /Home/search?query=da HTTP/1.1" 500 1536 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error:[14/Feb/2017:15:28:56] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:15:28:56] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:15:28:56] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:15:28:56] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[14/Feb/2017:15:28:56] ENGINE Bus STARTED
+INFO:cherrypy.error.4525393808:[14/Feb/2017:15:29:23]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.error.4525393808:[14/Feb/2017:15:29:24] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=c45065171e264551cbcd3838a8c23b02a028f7f8
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4525393808:[14/Feb/2017:15:29:24] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 675, in respond
+    response.finalize()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 947, in finalize
+    content = self.collapse_body()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 913, in collapse_body
+    newbody = ntob('').join(newbody)
+TypeError: sequence item 0: expected string, dict found
+INFO:cherrypy.access.4525393808:127.0.0.1 - - [14/Feb/2017:15:29:24] "GET /Home/search?query=da HTTP/1.1" 500 1345 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error:[14/Feb/2017:15:29:54] ENGINE Restarting because /Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py changed.
+INFO:cherrypy.error:[14/Feb/2017:15:29:54] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:15:29:54] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:15:29:54] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 3005)) shut down
+INFO:cherrypy.error:[14/Feb/2017:15:29:54] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:15:29:54] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:15:29:54] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:15:29:54] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:15:29:54] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:15:29:54] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 3005)) already shut down
+INFO:cherrypy.error:[14/Feb/2017:15:29:54] ENGINE No thread running for None.
+INFO:cherrypy.error:[14/Feb/2017:15:29:54] ENGINE No thread running for None.
+INFO:cherrypy.error:[14/Feb/2017:15:29:54] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:15:29:54] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:15:29:54] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:15:31:07] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:15:31:07] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:15:31:07] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:15:31:08] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[14/Feb/2017:15:31:08] ENGINE Bus STARTED
+INFO:cherrypy.error.4546422672:[14/Feb/2017:15:31:15]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.access.4546422672:127.0.0.1 - - [14/Feb/2017:15:31:15] "GET /Home/search?query=da HTTP/1.1" 200 - "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error:[14/Feb/2017:15:33:23] ENGINE Restarting because /Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py changed.
+INFO:cherrypy.error:[14/Feb/2017:15:33:23] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:15:33:23] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:15:33:23] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 3005)) shut down
+INFO:cherrypy.error:[14/Feb/2017:15:33:23] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:15:33:23] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:15:33:23] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:15:33:23] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:15:33:23] ENGINE Waiting for child threads to terminate...
+INFO:cherrypy.error:[14/Feb/2017:15:33:23] ENGINE Re-spawning python run.py
+INFO:cherrypy.error:[14/Feb/2017:15:33:26] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:15:33:26] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:15:33:26] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:15:33:26] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[14/Feb/2017:15:33:26] ENGINE Bus STARTED
+INFO:cherrypy.error.4381243280:[14/Feb/2017:15:33:33]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.access.4381243280:127.0.0.1 - - [14/Feb/2017:15:33:34] "GET /Home/search?query=da HTTP/1.1" 200 898 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4381243280:127.0.0.1 - - [14/Feb/2017:15:33:42] "GET /Home/search?query=8 HTTP/1.1" 200 898 "http://127.0.0.1:3005/Home/search?query=da" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4381243280:127.0.0.1 - - [14/Feb/2017:15:33:48] "GET /Home/search?query=7 HTTP/1.1" 200 898 "http://127.0.0.1:3005/Home/search?query=8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error:[14/Feb/2017:16:55:02] ENGINE Keyboard Interrupt: shutting down bus
+INFO:cherrypy.error:[14/Feb/2017:16:55:02] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:16:55:02] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 3005)) shut down
+INFO:cherrypy.error:[14/Feb/2017:16:55:02] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:16:55:02] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:16:55:02] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:16:55:02] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:16:55:02] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:16:55:02] ENGINE Waiting for child threads to terminate...
+INFO:cherrypy.error:[14/Feb/2017:16:58:53] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:16:58:53] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:16:58:53] ENGINE Bus STARTED
+INFO:cherrypy.access.4469003408:127.0.0.1 - - [14/Feb/2017:16:58:53] "GET /echo?msg=hey+there HTTP/1.1" 404 1251 "" ""
+ERROR:root:Error rendering template: 'module' object has no attribute 'session'
+ERROR:cherrypy.error.4469003408:[14/Feb/2017:16:58:53] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 9, in index
+    return self.render_template('home/index.html')
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/base.py", line 36, in render_template
+    Logger.error('Error rendering template', ex, True)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/models/loghelper.py", line 15, in error
+    raise ex if ex else Exception(msg)
+AttributeError: 'module' object has no attribute 'session'
+INFO:cherrypy.access.4469003408:127.0.0.1 - - [14/Feb/2017:16:58:53] "GET / HTTP/1.1" 500 1806 "" ""
+INFO:cherrypy.error:[14/Feb/2017:16:58:53] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:16:58:53] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:16:58:53] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:16:58:53] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:16:58:53] ENGINE Bus EXITED
