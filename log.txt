@@ -518,3 +518,236 @@ INFO:cherrypy.error:[14/Feb/2017:16:58:53] ENGINE Stopped thread '_TimeoutMonito
 INFO:cherrypy.error:[14/Feb/2017:16:58:53] ENGINE Bus STOPPED
 INFO:cherrypy.error:[14/Feb/2017:16:58:53] ENGINE Bus EXITING
 INFO:cherrypy.error:[14/Feb/2017:16:58:53] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:18:32:29] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:18:32:29] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:32:29] ENGINE Bus STARTED
+INFO:cherrypy.access.4516971600:127.0.0.1 - - [14/Feb/2017:18:32:29] "GET /echo?msg=hey+there HTTP/1.1" 404 1251 "" ""
+ERROR:root:Error rendering template: 'module' object has no attribute 'session'
+ERROR:cherrypy.error.4516971600:[14/Feb/2017:18:32:29] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 9, in index
+    return self.render_template('home/index.html')
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/base.py", line 36, in render_template
+    Logger.error('Error rendering template', ex, True)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/models/loghelper.py", line 15, in error
+    raise ex if ex else Exception(msg)
+AttributeError: 'module' object has no attribute 'session'
+INFO:cherrypy.access.4516971600:127.0.0.1 - - [14/Feb/2017:18:32:29] "GET / HTTP/1.1" 500 1806 "" ""
+INFO:cherrypy.error:[14/Feb/2017:18:32:29] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:18:32:29] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:32:29] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:18:32:29] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:18:32:29] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:18:33:49] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:18:33:49] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:33:49] ENGINE Bus STARTED
+INFO:cherrypy.access.4432393296:127.0.0.1 - - [14/Feb/2017:18:33:49] "GET /echo?msg=hey+there HTTP/1.1" 404 1251 "" ""
+ERROR:root:Error rendering template: 'module' object has no attribute 'session'
+ERROR:cherrypy.error.4432393296:[14/Feb/2017:18:33:49] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 9, in index
+    return self.render_template('home/index.html')
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/base.py", line 36, in render_template
+    Logger.error('Error rendering template', ex, True)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/models/loghelper.py", line 15, in error
+    raise ex if ex else Exception(msg)
+AttributeError: 'module' object has no attribute 'session'
+INFO:cherrypy.access.4432393296:127.0.0.1 - - [14/Feb/2017:18:33:49] "GET / HTTP/1.1" 500 1806 "" ""
+INFO:cherrypy.error:[14/Feb/2017:18:33:49] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:18:33:49] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:33:49] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:18:33:49] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:18:33:49] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:18:40:17] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:18:40:17] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:40:17] ENGINE Bus STARTED
+INFO:cherrypy.error:[14/Feb/2017:18:40:17] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:18:40:17] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:40:17] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:18:40:17] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:18:40:17] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:18:41:36] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:18:41:36] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:41:36] ENGINE Bus STARTED
+INFO:cherrypy.error:[14/Feb/2017:18:41:36] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:18:41:36] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:41:36] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:18:41:36] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:18:41:36] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:18:42:02] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:18:42:02] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:42:02] ENGINE Bus STARTED
+INFO:cherrypy.access.4557706128:127.0.0.1 - - [14/Feb/2017:18:42:02] "GET /Home HTTP/1.1" 301 99 "" ""
+INFO:cherrypy.error:[14/Feb/2017:18:42:02] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:18:42:02] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:42:02] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:18:42:02] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:18:42:02] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:18:42:18] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:18:42:18] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:42:18] ENGINE Bus STARTED
+INFO:cherrypy.error:[14/Feb/2017:18:42:18] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:18:42:18] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:42:18] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:18:42:18] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:18:42:18] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:18:42:31] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:18:42:31] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:42:31] ENGINE Bus STARTED
+INFO:cherrypy.access.4493927312:127.0.0.1 - - [14/Feb/2017:18:42:31] "GET /Home HTTP/1.1" 301 99 "" ""
+INFO:cherrypy.error:[14/Feb/2017:18:42:31] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:18:42:31] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:42:31] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:18:42:31] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:18:42:31] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:18:42:50] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:18:42:50] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:42:50] ENGINE Bus STARTED
+INFO:cherrypy.access.4557005712:127.0.0.1 - - [14/Feb/2017:18:42:50] "GET /Home HTTP/1.1" 301 99 "" ""
+INFO:cherrypy.error:[14/Feb/2017:18:42:50] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:18:42:50] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:42:50] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:18:42:50] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:18:42:50] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:18:44:54] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:18:44:54] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:44:54] ENGINE Bus STARTED
+INFO:cherrypy.access.4319220688:127.0.0.1 - - [14/Feb/2017:18:44:54] "GET /Home HTTP/1.1" 301 99 "" ""
+INFO:cherrypy.error:[14/Feb/2017:18:44:54] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:18:44:54] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:44:54] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:18:44:54] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:18:44:54] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:18:47:56] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:18:47:56] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:47:56] ENGINE Bus STARTED
+INFO:cherrypy.access.4571550608:127.0.0.1 - - [14/Feb/2017:18:47:56] "GET /Home HTTP/1.1" 301 99 "" ""
+INFO:cherrypy.error:[14/Feb/2017:18:47:56] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:18:47:56] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:47:56] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:18:47:56] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:18:47:56] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:18:48:09] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:18:48:09] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:48:09] ENGINE Bus STARTED
+INFO:cherrypy.access.4480525200:127.0.0.1 - - [14/Feb/2017:18:48:09] "GET /Home HTTP/1.1" 301 99 "" ""
+INFO:cherrypy.error:[14/Feb/2017:18:48:09] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:18:48:09] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:48:09] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:18:48:09] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:18:48:09] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:18:48:55] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:18:48:55] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:48:55] ENGINE Bus STARTED
+INFO:cherrypy.access.4436968400:127.0.0.1 - - [14/Feb/2017:18:48:55] "GET /Home HTTP/1.1" 301 99 "" ""
+INFO:cherrypy.error:[14/Feb/2017:18:48:55] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:18:48:55] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:18:48:55] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:18:48:55] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:18:48:55] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:19:32:32] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:19:32:32] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:19:32:32] ENGINE Bus STARTED
+ERROR:root:Error rendering template: 'module' object has no attribute 'session'
+ERROR:cherrypy.error.4311987152:[14/Feb/2017:19:32:32] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 9, in index
+    return self.render_template('home/index.html')
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/base.py", line 36, in render_template
+    Logger.error('Error rendering template', ex, True)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/models/loghelper.py", line 15, in error
+    raise ex if ex else Exception(msg)
+AttributeError: 'module' object has no attribute 'session'
+INFO:cherrypy.access.4311987152:127.0.0.1 - - [14/Feb/2017:19:32:32] "GET /Home/ HTTP/1.1" 500 1806 "" ""
+INFO:cherrypy.error:[14/Feb/2017:19:32:32] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:19:32:32] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:19:32:32] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:19:32:32] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:19:32:32] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:19:33:14] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:19:33:14] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:19:33:14] ENGINE Bus STARTED
+ERROR:root:Error rendering template: 'module' object has no attribute 'session'
+ERROR:cherrypy.error.4363600848:[14/Feb/2017:19:33:14] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 9, in index
+    return self.render_template('home/index.html')
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/base.py", line 36, in render_template
+    Logger.error('Error rendering template', ex, True)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/models/loghelper.py", line 15, in error
+    raise ex if ex else Exception(msg)
+AttributeError: 'module' object has no attribute 'session'
+INFO:cherrypy.access.4363600848:127.0.0.1 - - [14/Feb/2017:19:33:14] "GET /Home/ HTTP/1.1" 500 1806 "" ""
+INFO:cherrypy.error:[14/Feb/2017:19:33:14] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:19:33:14] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:19:33:14] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:19:33:14] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:19:33:14] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:19:33:46] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:19:33:46] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:19:33:46] ENGINE Bus STARTED
+INFO:cherrypy.access.4343722960:127.0.0.1 - - [14/Feb/2017:19:33:46] "GET /Home HTTP/1.1" 301 99 "" ""
+INFO:cherrypy.error:[14/Feb/2017:19:33:46] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:19:33:46] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:19:33:46] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:19:33:46] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:19:33:46] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:19:34:03] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:19:34:03] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:19:34:03] ENGINE Bus STARTED
+ERROR:root:Error rendering template: 'module' object has no attribute 'session'
+ERROR:cherrypy.error.4519961552:[14/Feb/2017:19:34:03] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 9, in index
+    return self.render_template('home/index.html')
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/base.py", line 36, in render_template
+    Logger.error('Error rendering template', ex, True)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/models/loghelper.py", line 15, in error
+    raise ex if ex else Exception(msg)
+AttributeError: 'module' object has no attribute 'session'
+INFO:cherrypy.access.4519961552:127.0.0.1 - - [14/Feb/2017:19:34:03] "GET /Home/ HTTP/1.1" 500 1806 "" ""
+INFO:cherrypy.error:[14/Feb/2017:19:34:03] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:19:34:03] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:19:34:03] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:19:34:03] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:19:34:03] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:20:00:42] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:20:00:42] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:20:00:42] ENGINE Bus STARTED
+INFO:cherrypy.error.4378047632:[14/Feb/2017:20:00:42]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.access.4378047632:127.0.0.1 - - [14/Feb/2017:20:00:42] "GET /Home/ HTTP/1.1" 200 898 "" ""
+INFO:cherrypy.error:[14/Feb/2017:20:00:42] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:20:00:42] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:20:00:42] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:20:00:42] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:20:00:42] ENGINE Bus EXITED

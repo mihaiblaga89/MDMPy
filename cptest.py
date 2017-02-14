@@ -9,11 +9,13 @@ Date : 14/02/2017
 from StringIO import StringIO
 import unittest
 import urllib
+import os
 
 import cherrypy
 
 # Not strictly speaking mandatory but just makes sense
 cherrypy.config.update({'environment': "test_suite"})
+
 
 # This is mandatory so that the HTTP server isn't started
 # if you need to actually start (why would you?), simply
