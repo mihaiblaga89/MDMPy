@@ -13,6 +13,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'site
 import cherrypy
 
 from controllers.home import HomeController
+from controllers.settings import SettingsController
 from cptest import BaseCherryPyTestCase
 
 
@@ -35,7 +36,8 @@ def setUpModule():
     }
 
     cherrypy.config.update(server_config)
-    cherrypy.tree.mount(HomeController(), '/Home')
+    cherrypy.tree.mount(HomeController(), '/dashboard')
+    cherrypy.tree.mount(SettingsController(), '/settings')
     cherrypy.engine.start()
 setup_module = setUpModule
 
@@ -47,10 +49,14 @@ teardown_module = tearDownModule
 
 class TestCherryPyApp(BaseCherryPyTestCase):
     def test_index(self):
-        response = self.request(path='/Home/', app_path='/Home')
+        response = self.request(path='/dashboard/', app_path='/dashboard')
         self.assertEqual(response.output_status, '200 OK')
         # response body is wrapped into a list internally by CherryPy
         # self.assertEqual(response.body, ['hello world'])
+
+    def test_settings(self):
+        response = self.request(path='/settings/', app_path='/settings')
+        self.assertEqual(response.output_status, '200 OK')
 
     # def test_echo(self):
     #     response = self.request('/echo', msg="hey there")

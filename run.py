@@ -4,6 +4,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'site
 import cherrypy
 import os
 from controllers.home import *
+from controllers.settings import *
 from site_config import SiteConfig
 from controllers.auth import require, member_of, name_is
 from models.loghelper import Logger
@@ -81,6 +82,7 @@ def start_server():
 
     # this will let us access localhost:3005/Home or localhost:3005/Home/Index
     cherrypy.tree.mount(HomeController(), '/dashboard')
+    cherrypy.tree.mount(SettingsController(), '/settings')
 
     # this will map localhost:3005/
     cherrypy.tree.mount(RootController(), '/', {
