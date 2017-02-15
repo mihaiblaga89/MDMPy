@@ -80,7 +80,7 @@ def start_server():
     cherrypy.config.update(server_config)
 
     # this will let us access localhost:3005/Home or localhost:3005/Home/Index
-    cherrypy.tree.mount(HomeController(), '/Home')
+    cherrypy.tree.mount(HomeController(), '/dashboard')
 
     # this will map localhost:3005/
     cherrypy.tree.mount(RootController(), '/', {

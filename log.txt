@@ -761,3 +761,383 @@ INFO:cherrypy.error:[14/Feb/2017:20:12:13] ENGINE Stopped thread '_TimeoutMonito
 INFO:cherrypy.error:[14/Feb/2017:20:12:13] ENGINE Bus STOPPED
 INFO:cherrypy.error:[14/Feb/2017:20:12:13] ENGINE Bus EXITING
 INFO:cherrypy.error:[14/Feb/2017:20:12:13] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:20:34:02] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:20:34:02] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:20:34:02] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:20:34:02] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[14/Feb/2017:20:34:02] ENGINE Bus STARTED
+INFO:cherrypy.error.4561237840:[14/Feb/2017:20:34:11]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.error.4561237840:[14/Feb/2017:20:34:12] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4561237840:[14/Feb/2017:20:34:12] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 17, in search
+    return self.render_template('home/list.html', data=result)
+TypeError: render_template() got an unexpected keyword argument 'data'
+INFO:cherrypy.access.4561237840:127.0.0.1 - - [14/Feb/2017:20:34:12] "GET /Home/search?query=7 HTTP/1.1" 500 1550 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error.4561237840:[14/Feb/2017:20:36:07] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=3139b6da919a56792a4673442c45db9b26ab8cdf
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4561237840:[14/Feb/2017:20:36:07] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 17, in search
+    return self.render_template('home/list.html', data=result)
+TypeError: render_template() got an unexpected keyword argument 'data'
+INFO:cherrypy.access.4561237840:127.0.0.1 - - [14/Feb/2017:20:36:07] "GET /Home/search?query=7 HTTP/1.1" 500 1550 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error:[14/Feb/2017:20:36:14] ENGINE Keyboard Interrupt: shutting down bus
+INFO:cherrypy.error:[14/Feb/2017:20:36:14] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:20:36:17] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 3005)) shut down
+INFO:cherrypy.error:[14/Feb/2017:20:36:17] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:20:36:17] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:20:36:17] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:20:36:17] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:20:36:17] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:20:36:17] ENGINE Waiting for child threads to terminate...
+INFO:cherrypy.error:[14/Feb/2017:20:36:24] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:20:36:24] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:20:36:24] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:20:36:24] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[14/Feb/2017:20:36:24] ENGINE Bus STARTED
+INFO:cherrypy.error.4470511440:[14/Feb/2017:20:36:34]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.error.4470511440:[14/Feb/2017:20:36:35] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=7263307a02de289cc43d7235a11c723bfc08e460
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4470511440:[14/Feb/2017:20:36:35] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 17, in search
+    return self.render_template('home/list.html', data=result)
+TypeError: render_template() got an unexpected keyword argument 'data'
+INFO:cherrypy.access.4470511440:127.0.0.1 - - [14/Feb/2017:20:36:35] "GET /Home/search?query=7 HTTP/1.1" 500 1550 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error:[14/Feb/2017:20:37:07] ENGINE Restarting because /Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py changed.
+INFO:cherrypy.error:[14/Feb/2017:20:37:07] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:20:37:07] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:20:37:07] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 3005)) shut down
+INFO:cherrypy.error:[14/Feb/2017:20:37:07] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:20:37:07] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:20:37:07] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:20:37:07] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:20:37:07] ENGINE Waiting for child threads to terminate...
+INFO:cherrypy.error:[14/Feb/2017:20:37:07] ENGINE Re-spawning python run.py
+INFO:cherrypy.error:[14/Feb/2017:20:37:10] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:20:37:10] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:20:37:10] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:20:37:10] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[14/Feb/2017:20:37:10] ENGINE Bus STARTED
+INFO:cherrypy.error.4444645200:[14/Feb/2017:20:37:12]  storage_type is deprecated. Supply storage_class instead
+ERROR:root:Error rendering template: list indices must be integers, not str
+INFO:cherrypy.error.4444645200:[14/Feb/2017:20:37:13] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=2dcbcd5a7fa4e64bcfba465d1b5146e3068ea635
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4444645200:[14/Feb/2017:20:37:13] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 17, in search
+    return self.render_template('home/list.html', template_vars=result)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/base.py", line 36, in render_template
+    Logger.error('Error rendering template', ex, True)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/models/loghelper.py", line 15, in error
+    raise ex if ex else Exception(msg)
+TypeError: list indices must be integers, not str
+INFO:cherrypy.access.4444645200:127.0.0.1 - - [14/Feb/2017:20:37:13] "GET /Home/search?query=7 HTTP/1.1" 500 1820 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+ERROR:root:Error rendering template: list indices must be integers, not str
+INFO:cherrypy.error.4444645200:[14/Feb/2017:20:37:51] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=a9b66adf341ecc62b0fede1ccc7fb8b821b51691
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4444645200:[14/Feb/2017:20:37:51] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 17, in search
+    return self.render_template('home/list.html', template_vars=result)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/base.py", line 36, in render_template
+    Logger.error('Error rendering template', ex, True)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/models/loghelper.py", line 15, in error
+    raise ex if ex else Exception(msg)
+TypeError: list indices must be integers, not str
+INFO:cherrypy.access.4444645200:127.0.0.1 - - [14/Feb/2017:20:37:51] "GET /Home/search?query=7 HTTP/1.1" 500 1820 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error:[14/Feb/2017:20:38:39] ENGINE Restarting because /Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py changed.
+INFO:cherrypy.error:[14/Feb/2017:20:38:39] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:20:38:39] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:20:38:39] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 3005)) shut down
+INFO:cherrypy.error:[14/Feb/2017:20:38:39] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:20:38:39] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:20:38:39] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:20:38:39] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:20:38:39] ENGINE Waiting for child threads to terminate...
+INFO:cherrypy.error:[14/Feb/2017:20:38:39] ENGINE Re-spawning python run.py
+INFO:cherrypy.error:[14/Feb/2017:20:38:42] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:20:38:42] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:20:38:42] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:20:38:42] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[14/Feb/2017:20:38:42] ENGINE Bus STARTED
+INFO:cherrypy.error.4430620496:[14/Feb/2017:20:38:47]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.error.4430620496:[14/Feb/2017:20:38:48] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=972d0be90e59fc7a2a4ae52d561f8ea793bfbf79
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4430620496:[14/Feb/2017:20:38:48] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 17, in search
+    return self.render_template('home/list.html', arguments=result)
+TypeError: render_template() got an unexpected keyword argument 'arguments'
+INFO:cherrypy.access.4430620496:127.0.0.1 - - [14/Feb/2017:20:38:48] "GET /Home/search?query=7 HTTP/1.1" 500 1560 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error:[14/Feb/2017:20:42:23] ENGINE Restarting because /Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py changed.
+INFO:cherrypy.error:[14/Feb/2017:20:42:23] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:20:42:23] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:20:42:23] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 3005)) shut down
+INFO:cherrypy.error:[14/Feb/2017:20:42:23] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:20:42:23] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:20:42:23] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:20:42:23] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:20:42:23] ENGINE Waiting for child threads to terminate...
+INFO:cherrypy.error:[14/Feb/2017:20:42:23] ENGINE Re-spawning python run.py
+INFO:cherrypy.error:[14/Feb/2017:20:42:26] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:20:42:26] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:20:42:26] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:20:42:26] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[14/Feb/2017:20:42:26] ENGINE Bus STARTED
+INFO:cherrypy.error.4365809488:[14/Feb/2017:20:42:35]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.access.4365809488:127.0.0.1 - - [14/Feb/2017:20:42:36] "GET /Home/search?query=7 HTTP/1.1" 200 907 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4365810192:127.0.0.1 - - [14/Feb/2017:20:42:36] "GET /static/css/site.css HTTP/1.1" 200 347 "http://127.0.0.1:3005/Home/search?query=7" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4365810192:127.0.0.1 - - [14/Feb/2017:20:42:36] "GET /static/css/views/home/index.css HTTP/1.1" 200 214 "http://127.0.0.1:3005/Home/search?query=7" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4365810192:127.0.0.1 - - [14/Feb/2017:20:42:36] "GET /static/css/pure-min.css HTTP/1.1" 200 18943 "http://127.0.0.1:3005/Home/search?query=7" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4365809488:127.0.0.1 - - [14/Feb/2017:20:43:34] "GET /Home/search?query=7 HTTP/1.1" 200 905 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+ERROR:root:Error rendering template: expected token 'end of print statement', got 'LIST_OF_ARGUMENT'
+INFO:cherrypy.error.4365809488:[14/Feb/2017:20:44:01] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  COOKIE: comm100_embedded_210217=; comm100_session_210217=32636; comm100_guid2_210217=e6d8350e5b1f4d15ad8c2b69a6f119ed; _ga=GA1.1.480674395.1464386174; ump-session-id=431384919; sessionid=i97hp4cdolm3cnme3e0l6qdygpph54wx; csrftoken=pzwyLFcnCTyrH2OAwoVj9U7fckJUGqfC; session_id_welcome=127.0.0.1-66af703a-06a7-4312-9ada-26595557a111; session_id_admin=127.0.0.1-34c6bc89-9180-4de5-8dd0-d218db76409e; session_id_mdmpy=127.0.0.1-8c8b4acc-3a21-4584-ae60-b3bfc9a5c433; session_id=93d4c1f5861022c016736454dbef1973af8a18fa
+  HOST: 127.0.0.1:3005
+  UPGRADE-INSECURE-REQUESTS: 1
+  CACHE-CONTROL: max-age=0
+  Remote-Addr: 127.0.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  USER-AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8,fr;q=0.6
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch, br
+ERROR:cherrypy.error.4365809488:[14/Feb/2017:20:44:01] HTTP 
+Traceback (most recent call last):
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/lib/encoding.py", line 220, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/site-packages/cherrypy/_cpdispatch.py", line 60, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py", line 17, in search
+    return self.render_template('home/list.html', template_vars={'data' : result})
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/controllers/base.py", line 36, in render_template
+    Logger.error('Error rendering template', ex, True)
+  File "/Users/Lego/Documents/Personal/OS/MDMPy2/models/loghelper.py", line 15, in error
+    raise ex if ex else Exception(msg)
+TemplateSyntaxError: expected token 'end of print statement', got 'LIST_OF_ARGUMENT'
+INFO:cherrypy.access.4365809488:127.0.0.1 - - [14/Feb/2017:20:44:01] "GET /Home/search?query=7 HTTP/1.1" 500 1866 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4365809488:127.0.0.1 - - [14/Feb/2017:20:44:23] "GET /Home/search?query=7 HTTP/1.1" 200 905 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4365809488:127.0.0.1 - - [14/Feb/2017:20:45:38] "GET /Home/search?query=7 HTTP/1.1" 200 2248 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error:[14/Feb/2017:20:46:58] ENGINE Restarting because /Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py changed.
+INFO:cherrypy.error:[14/Feb/2017:20:46:58] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:20:46:58] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:20:46:58] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 3005)) shut down
+INFO:cherrypy.error:[14/Feb/2017:20:46:58] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:20:46:58] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:20:46:58] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:20:46:58] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:20:46:58] ENGINE Waiting for child threads to terminate...
+INFO:cherrypy.error:[14/Feb/2017:20:46:58] ENGINE Re-spawning python run.py
+INFO:cherrypy.error:[14/Feb/2017:20:47:00] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:20:47:00] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:20:47:00] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:20:47:01] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[14/Feb/2017:20:47:01] ENGINE Bus STARTED
+INFO:cherrypy.error.4445894480:[14/Feb/2017:20:47:10]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.access.4445894480:127.0.0.1 - - [14/Feb/2017:20:47:11] "GET /Home/search?query=creed HTTP/1.1" 200 2248 "http://127.0.0.1:3005/Home/search?query=7" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4445894480:127.0.0.1 - - [14/Feb/2017:20:47:18] "GET /Home/search?query=creed HTTP/1.1" 200 2248 "http://127.0.0.1:3005/Home/search?query=7" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4445894480:127.0.0.1 - - [14/Feb/2017:20:47:23] "GET /Home/search?query=creed HTTP/1.1" 200 2248 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4445895184:127.0.0.1 - - [14/Feb/2017:21:57:47] "GET / HTTP/1.1" 200 1808 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4445895184:127.0.0.1 - - [14/Feb/2017:21:57:47] "GET /static/js/ui.js HTTP/1.1" 200 1170 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4445895184:127.0.0.1 - - [14/Feb/2017:21:59:45] "GET / HTTP/1.1" 200 1869 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4445895184:127.0.0.1 - - [14/Feb/2017:21:59:46] "GET /static/css/side-menu.css HTTP/1.1" 200 5028 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4445895184:127.0.0.1 - - [14/Feb/2017:22:14:34] "GET / HTTP/1.1" 200 1869 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4445895184:127.0.0.1 - - [14/Feb/2017:22:14:34] "GET /static/js/ui.js HTTP/1.1" 304 - "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4445895184:127.0.0.1 - - [14/Feb/2017:22:14:35] "GET /favicon.ico HTTP/1.1" 200 1406 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4445895184:127.0.0.1 - - [14/Feb/2017:22:17:15] "GET / HTTP/1.1" 200 2061 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4445895184:127.0.0.1 - - [14/Feb/2017:22:17:15] "GET /static/css/side-menu.css HTTP/1.1" 304 - "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4445895184:127.0.0.1 - - [14/Feb/2017:22:17:15] "GET /favicon.ico HTTP/1.1" 200 1406 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4445895184:127.0.0.1 - - [14/Feb/2017:22:17:30] "GET /search?query=8 HTTP/1.1" 404 513 "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error:[14/Feb/2017:22:35:26] ENGINE Restarting because /Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py changed.
+INFO:cherrypy.error:[14/Feb/2017:22:35:26] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:22:35:26] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:22:35:26] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 3005)) shut down
+INFO:cherrypy.error:[14/Feb/2017:22:35:26] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:22:35:26] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:22:35:26] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:22:35:26] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:22:35:26] ENGINE Waiting for child threads to terminate...
+INFO:cherrypy.error:[14/Feb/2017:22:35:26] ENGINE Re-spawning python run.py
+INFO:cherrypy.error:[14/Feb/2017:22:35:28] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:22:35:29] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:22:35:29] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:22:35:29] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[14/Feb/2017:22:35:29] ENGINE Bus STARTED
+INFO:cherrypy.error:[14/Feb/2017:22:39:34] ENGINE Restarting because /Users/Lego/Documents/Personal/OS/MDMPy2/run.py changed.
+INFO:cherrypy.error:[14/Feb/2017:22:39:34] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:22:39:34] ENGINE Bus STOPPING
+INFO:cherrypy.error:[14/Feb/2017:22:39:34] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 3005)) shut down
+INFO:cherrypy.error:[14/Feb/2017:22:39:34] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:22:39:34] ENGINE Bus STOPPED
+INFO:cherrypy.error:[14/Feb/2017:22:39:34] ENGINE Bus EXITING
+INFO:cherrypy.error:[14/Feb/2017:22:39:34] ENGINE Bus EXITED
+INFO:cherrypy.error:[14/Feb/2017:22:39:34] ENGINE Waiting for child threads to terminate...
+INFO:cherrypy.error:[14/Feb/2017:22:39:34] ENGINE Re-spawning python run.py
+INFO:cherrypy.error:[14/Feb/2017:22:39:35] ENGINE Bus STARTING
+INFO:cherrypy.error:[14/Feb/2017:22:39:35] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[14/Feb/2017:22:39:35] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[14/Feb/2017:22:39:35] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[14/Feb/2017:22:39:35] ENGINE Bus STARTED
+INFO:cherrypy.error.4473420304:[14/Feb/2017:22:39:49]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.access.4473420304:127.0.0.1 - - [14/Feb/2017:22:39:49] "GET / HTTP/1.1" 200 2152 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4473420304:127.0.0.1 - - [14/Feb/2017:22:39:49] "GET /static/css/side-menu.css HTTP/1.1" 304 - "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4473420304:127.0.0.1 - - [14/Feb/2017:22:39:49] "GET /static/js/ui.js HTTP/1.1" 304 - "http://127.0.0.1:3005/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4473419600:127.0.0.1 - - [14/Feb/2017:22:39:53] "GET /dashboard HTTP/1.1" 301 119 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4473419600:127.0.0.1 - - [14/Feb/2017:22:39:53] "GET /dashboard/ HTTP/1.1" 200 2152 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4473419600:127.0.0.1 - - [14/Feb/2017:22:39:58] "GET /dashboard/search?query=8 HTTP/1.1" 200 3495 "http://127.0.0.1:3005/dashboard/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4473419600:127.0.0.1 - - [14/Feb/2017:22:40:09] "GET /dashboard/search?query=creed HTTP/1.1" 200 3495 "http://127.0.0.1:3005/dashboard/search?query=8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4473419600:127.0.0.1 - - [14/Feb/2017:23:26:31] "GET /dashboard/search?query=creed HTTP/1.1" 200 1788 "http://127.0.0.1:3005/dashboard/search?query=8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4473420304:127.0.0.1 - - [14/Feb/2017:23:26:31] "GET /static/css/side-menu.css HTTP/1.1" 304 - "http://127.0.0.1:3005/dashboard/search?query=creed" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4473420304:127.0.0.1 - - [14/Feb/2017:23:26:31] "GET /static/js/ui.js HTTP/1.1" 304 - "http://127.0.0.1:3005/dashboard/search?query=creed" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4473420304:127.0.0.1 - - [14/Feb/2017:23:26:31] "GET /favicon.ico HTTP/1.1" 200 1406 "http://127.0.0.1:3005/dashboard/search?query=creed" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4473419600:127.0.0.1 - - [15/Feb/2017:01:29:35] "GET /dashboard/search?query=creed HTTP/1.1" 200 1851 "http://127.0.0.1:3005/dashboard/search?query=8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4473420304:127.0.0.1 - - [15/Feb/2017:01:29:35] "GET /favicon.ico HTTP/1.1" 200 1406 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4473419600:127.0.0.1 - - [15/Feb/2017:11:12:30] "GET /dashboard/search?query=creed HTTP/1.1" 200 1851 "http://127.0.0.1:3005/dashboard/search?query=8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4473420304:127.0.0.1 - - [15/Feb/2017:11:12:30] "GET /static/css/side-menu.css HTTP/1.1" 304 - "http://127.0.0.1:3005/dashboard/search?query=creed" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4473420304:127.0.0.1 - - [15/Feb/2017:11:12:30] "GET /static/js/ui.js HTTP/1.1" 304 - "http://127.0.0.1:3005/dashboard/search?query=creed" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4473420304:127.0.0.1 - - [15/Feb/2017:11:12:30] "GET /static/js/contrib/jquery-3.1.1.min.js HTTP/1.1" 200 86709 "http://127.0.0.1:3005/dashboard/search?query=creed" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4473419600:127.0.0.1 - - [15/Feb/2017:11:12:43] "GET /dashboard/search?query=8 HTTP/1.1" 200 1851 "http://127.0.0.1:3005/dashboard/search?query=creed" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.access.4473419600:127.0.0.1 - - [15/Feb/2017:11:13:15] "GET /dashboard/search?query=creed HTTP/1.1" 200 1851 "http://127.0.0.1:3005/dashboard/search?query=8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error:[15/Feb/2017:11:18:08] ENGINE Restarting because /Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py changed.
+INFO:cherrypy.error:[15/Feb/2017:11:18:08] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[15/Feb/2017:11:18:08] ENGINE Bus STOPPING
+INFO:cherrypy.error:[15/Feb/2017:11:18:08] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 3005)) shut down
+INFO:cherrypy.error:[15/Feb/2017:11:18:08] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[15/Feb/2017:11:18:08] ENGINE Bus STOPPED
+INFO:cherrypy.error:[15/Feb/2017:11:18:08] ENGINE Bus EXITING
+INFO:cherrypy.error:[15/Feb/2017:11:18:08] ENGINE Bus EXITED
+INFO:cherrypy.error:[15/Feb/2017:11:18:08] ENGINE Waiting for child threads to terminate...
+INFO:cherrypy.error:[15/Feb/2017:11:18:08] ENGINE Re-spawning python run.py
+INFO:cherrypy.error:[15/Feb/2017:11:18:11] ENGINE Bus STARTING
+INFO:cherrypy.error:[15/Feb/2017:11:18:11] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[15/Feb/2017:11:18:11] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[15/Feb/2017:11:18:11] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[15/Feb/2017:11:18:11] ENGINE Bus STARTED
+INFO:cherrypy.error.4467091344:[15/Feb/2017:11:18:24]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.access.4467091344:127.0.0.1 - - [15/Feb/2017:11:18:26] "GET /dashboard/search?query=creed HTTP/1.1" 200 1851 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+INFO:cherrypy.error:[15/Feb/2017:11:20:51] ENGINE Restarting because /Users/Lego/Documents/Personal/OS/MDMPy2/controllers/home.py changed.
+INFO:cherrypy.error:[15/Feb/2017:11:20:51] ENGINE Stopped thread 'Autoreloader'.
+INFO:cherrypy.error:[15/Feb/2017:11:20:51] ENGINE Bus STOPPING
+INFO:cherrypy.error:[15/Feb/2017:11:20:51] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 3005)) shut down
+INFO:cherrypy.error:[15/Feb/2017:11:20:51] ENGINE Stopped thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[15/Feb/2017:11:20:51] ENGINE Bus STOPPED
+INFO:cherrypy.error:[15/Feb/2017:11:20:51] ENGINE Bus EXITING
+INFO:cherrypy.error:[15/Feb/2017:11:20:51] ENGINE Bus EXITED
+INFO:cherrypy.error:[15/Feb/2017:11:20:51] ENGINE Waiting for child threads to terminate...
+INFO:cherrypy.error:[15/Feb/2017:11:20:51] ENGINE Re-spawning python run.py
+INFO:cherrypy.error:[15/Feb/2017:11:20:52] ENGINE Bus STARTING
+INFO:cherrypy.error:[15/Feb/2017:11:20:52] ENGINE Started monitor thread 'Autoreloader'.
+INFO:cherrypy.error:[15/Feb/2017:11:20:52] ENGINE Started monitor thread '_TimeoutMonitor'.
+INFO:cherrypy.error:[15/Feb/2017:11:20:52] ENGINE Serving on http://0.0.0.0:3005
+INFO:cherrypy.error:[15/Feb/2017:11:20:52] ENGINE Bus STARTED
+INFO:cherrypy.error.4568147856:[15/Feb/2017:11:20:56]  storage_type is deprecated. Supply storage_class instead
+INFO:cherrypy.access.4568147856:127.0.0.1 - - [15/Feb/2017:11:20:56] "GET /dashboard/search?query=creed HTTP/1.1" 200 3447 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
