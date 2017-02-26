@@ -6,20 +6,21 @@ Date : 14/02/2017
 '''
 
 import unirest
+from lib.configuration import Cfg
+import urllib
 
 
 class Request():
 
-    base_url = "https://igdbcom-internet-game-database-v1.p.mashape.com/games/"
-    fields = "?fields=name%2Cfirst_release_date%2Cid%2Ccover&limit=10&offset=0&order=release_dates.date%3Adesc"
-    query = "&search="
-
     @staticmethod
     def get(q=""):
+        base_url = "https://igdbcom-internet-game-database-v1.p.mashape.com/games/"
+        fields = "?fields=name%2Cfirst_release_date%2Cid%2Ccover&limit=10&offset=0&order=release_dates.date%3Adesc"
+        query = "&search=" + urllib.quote(q)
 
-        response = unirest.get("https://igdbcom-internet-game-database-v1.p.mashape.com/games/?fields=name%2Cfirst_release_date%2Cid%2Ccover&limit=10&offset=0&order=release_dates.date%3Adesc&search=Watchdogs",
+        response = unirest.get(base_url + fields + query,
           headers={
-            "X-Mashape-Key": "kQBXhLiPqimshB5RGtSsZRU1MB9yp1Wfq7XjsnTpqZD7zl6kdc",
+            "X-Mashape-Key": Cfg.get(Cfg(), 'igdb_key'),
             "Accept": "application/json"
           }
         )

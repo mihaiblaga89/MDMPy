@@ -1,6 +1,5 @@
 import cherrypy
 from controllers.base import BaseController
-import lib.IGDB as IGDB
 
 
 class HomeController(BaseController):
@@ -11,7 +10,10 @@ class HomeController(BaseController):
     @cherrypy.expose
     def search(self, query=''):
         if not query:
-            return False
+            return {'success' : False}
         else:
+            import lib.IGDB as IGDB
+            import json
             result = IGDB.Request.get(q=query)
-            return self.render_template('home/dashboard.html', template_vars={'data' : result})
+            return json.dumps({'success' : True, 'data' : result})
+            # return self.render_template('home/main.html', template_vars={'data' : result})

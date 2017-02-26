@@ -5,17 +5,49 @@
 
 {% block body %}
 <div class="pure-u-1-1" id="welcome-header">
-  <div id="welcome-text">
-      <form method="get" action="search">
-              <input type="text" value="8" name="query" />
-              <button type="submit">Give it now!</button>
-            </form>
-      <div class="data">
-          {% for argument in data %}
-            {{ argument }}<br>
-        {% endfor %}
-      </div>
-  </div>
+<h3>Music</h3>
+    <table class="pure-table pure-table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Artist</th>
+            <th>Song</th>
+            <th>Album</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Honda</td>
+            <td>Accord</td>
+            <td>2009</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Toyota</td>
+            <td>Camry</td>
+            <td>2012</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Hyundai</td>
+            <td>Elantra</td>
+            <td>2010</td>
+        </tr>
+    </tbody>
+</table>
 </div>
+
+<div id="searchResults" class="pure-g"></div>
+
 {% endblock %}
+
+{% block footer %}
+<script src="/static/js/views/dashboard.js"></script>
+{% endblock %}
+
+
 

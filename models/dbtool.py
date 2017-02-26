@@ -1,29 +1,62 @@
-import os
-import cherrypy
-from cherrypy.process import wspbus, plugins
-from site_config import SiteConfig
+from peewee import *
+
+db = SqliteDatabase('mdmpy.db')
 
 
-# from models.DbHelper import DbHelper
+class Torrents(Model):
+    title = CharField()
 
-class DbTool(cherrypy.Tool):
-    def __init__(self):
-        cherrypy.Tool.__init__(self, 'on_start_resource',
-                               self.bind_session,
-                               priority=51)
+    class Meta:
+        database = db
 
-    def _setup(self):
-        cherrypy.Tool._setup(self)
-        cherrypy.request.hooks.attach('on_end_resource',
-                                      self.close,
-                                      priority=80)
 
-    def bind_session(self):
-        # this is where I initialize a database connection with a connection string stored
-        # in my site configuration. I then store a reference to the database object in the
-        # request.
-        # cherrypy.request.dbh = DbHelper(SiteConfig.conn_string)
-        pass
+class Music(Model):
+    title = CharField()
+    artist = CharField()
+    album = CharField(null=True)
+    ext_id = CharField(unique=True)
+    downloaded = BooleanField(default=False)
+    local_path = CharField(null=True)
+    torrent = ForeignKeyField(Torrents, null=True)
+    allow_youtube = BooleanField(default=False)
+    quality = CharField()
 
-    def close(self):
-        cherrypy.request.dbh.close()
+    class Meta:
+        database = db
+
+
+class Games(Model):
+    title = CharField()
+    ext_id = CharField(unique=True)
+    downloaded = BooleanField(default=False)
+    local_path = CharField()
+    torrent = ForeignKeyField(Torrents)
+
+    class Meta:
+        database = db
+
+
+class Books(Model):
+    title = CharField()
+    ext_id = CharField(unique=True)
+    downloaded = BooleanField(default=False)
+    local_path = CharField()
+    torrent = ForeignKeyField(Torrents)
+
+    class Meta:
+        database = db
+
+
+class Settings(Model):
+    key = CharField(unique=True)
+    value = CharField()
+
+    class Meta:
+        database = db
+
+
+def initializeDatabase():
+    db.connect()
+    if not Music.table_exists():
+        db.create_tables([Music, Games, Books, Settings, Torrents])
+

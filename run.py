@@ -5,11 +5,18 @@ import cherrypy
 import os
 from controllers.home import *
 from controllers.settings import *
+from controllers.music import *
 from site_config import SiteConfig
 from controllers.auth import require, member_of, name_is
 from models.loghelper import Logger
-from models.dbtool import DbTool
 
+from models.dbtool import *
+
+if os.path.exists(os.path.abspath(os.path.join(os.path.dirname(__file__), 'mdmpy.db'))):
+    os.remove(os.path.abspath(os.path.join(os.path.dirname(__file__), 'mdmpy.db')))
+    print("DB removed");
+
+initializeDatabase()
 
 # this method returns HTML when a 404 (page not found error) is encountered.
 # You'll probably want to return custom HTML using Jinja2.
@@ -83,6 +90,7 @@ def start_server():
     # this will let us access localhost:3005/Home or localhost:3005/Home/Index
     cherrypy.tree.mount(HomeController(), '/dashboard')
     cherrypy.tree.mount(SettingsController(), '/settings')
+    cherrypy.tree.mount(MusicController(), '/music')
 
     # this will map localhost:3005/
     cherrypy.tree.mount(RootController(), '/', {

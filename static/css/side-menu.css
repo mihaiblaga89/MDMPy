@@ -145,6 +145,9 @@ appears on the left side of the page.
         font-size: 110%;
         color: #fff;
         margin: 0;
+        padding : 5px;
+        height : 25px;
+        background-color : #fefefe;
     }
 
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/
@@ -208,6 +211,12 @@ small screens.
 Hides the menu at `48em`, but modify this based on your app's needs.
 */
 @media (min-width: 48em) {
+
+    .pure-menu ul {
+    left: initial;
+    top : initial;
+    visibility : visible;
+}
 
     .header,
     .content {

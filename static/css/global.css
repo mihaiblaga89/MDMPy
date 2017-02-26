@@ -1,0 +1,17 @@
+.searchResult {
+    height : 300px;
+    -webkit-box-shadow: 2px 0px 29px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: 2px 0px 29px 0px rgba(0,0,0,0.47);
+    box-shadow: 2px 0px 29px 0px rgba(0,0,0,0.47);
+    border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+    border: 0px solid #000000;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.searchResult-image {
+    height : 300px;
+    float : left;
+}
