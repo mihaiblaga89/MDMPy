@@ -55,8 +55,17 @@ class Settings(Model):
         database = db
 
 
+class Indexers(Model):
+    url = CharField(unique=True)
+    type = CharField(default="torznab")
+    api_key = CharField(null=True)
+
+    class Meta:
+        database = db
+
+
 def initializeDatabase():
     db.connect()
     if not Music.table_exists():
-        db.create_tables([Music, Games, Books, Settings, Torrents])
+        db.create_tables([Music, Games, Books, Settings, Torrents, Indexers])
 

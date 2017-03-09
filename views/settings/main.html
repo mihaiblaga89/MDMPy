@@ -7,9 +7,89 @@
     <button id="restart" class="pure-u-2 pure-button button-xlarge button-secondary"><i class="fa fa-undo"></i> Restart</button>
     <button id="shutdown" class="pure-u-2 pure-button button-xlarge button-error"><i class="fa fa-power-off"></i> Shutdown</button>
 </div>
+
+<h3>Services</h3>
+    <table class="pure-table pure-table-bordered">
+    <thead>
+        <tr>
+            <th>Scheduler</th>
+            <th>Enabled</th>
+            <th>Active</th>
+            <th>Cycle Time</th>
+            <th>Next Run</th>
+            <th>Last Run</th>
+        </tr>
+    </thead>
+
+    <tbody>
+{% for job in jobs.running %}
+        <tr>
+            <td>{{job.name}}</td>
+            <td>True</td>
+            <td>2009</td>
+            <td>{{job.name}}</td>
+            <td>{{job.trigger}}</td>
+            <td>{{job.next_run_time}}</td>
+        </tr>
+{% endfor %}
+
+    </tbody>
+</table>
+
+<h3>Indexers</h3>
+<div class="indexers repeat">
+    <table class="wrapper" width="100%">
+        <thead>
+            <tr>
+                <td width="10%" colspan="4"><i class="fa fa-plus-circle add"></i></td>
+            </tr>
+        </thead>
+        <tbody class="container">
+        <tr class="template row">
+            <td width="40%">
+                <input class="url" type="text" name="input-field[(row-count-placeholder)]" placeholder="URL"/>
+            </td>
+
+            <td width="45%">
+                <input class="api_key" type="text" name="input-field[(row-count-placeholder)]" placeholder="API Key"/>
+            </td>
+
+            <td width="10%">
+                <select class="type">
+                    <option value="torznab">Torznab</option>
+                </select>
+            </td>
+
+            <td width="5%"><i class="fa fa-minus-circle remove"></i></td>
+        </tr>
+        {% for indexer in indexers %}
+         <tr class="row">
+            <td width="40%">
+                <input class="url" type="text" name="input-field" placeholder="URL" value="{{indexer.url}}"/>
+            </td>
+
+            <td width="45%">
+                <input class="api_key" type="text" name="input-field" placeholder="API Key" value="{{indexer.api_key}}"/>
+            </td>
+
+            <td width="10%">
+                <select class="type">
+                    <option value="torznab">Torznab</option>
+                </select>
+            </td>
+
+            <td width="5%"><i class="fa fa-minus-circle remove"></i></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <button id="save" class="pure-button"><i class="fa fa-floppy-o"></i> Save</button>
+</div>
+
 {% endblock %}
 
 {% block footer %}
+<script src="/static/js/repeatable-fields.js"></script>
 <script src="/static/js/views/settings.js"></script>
 {% endblock %}
 

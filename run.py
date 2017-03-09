@@ -9,21 +9,25 @@ from controllers.music import *
 from site_config import SiteConfig
 from controllers.auth import require, member_of, name_is
 from models.loghelper import Logger
-
 from models.dbtool import *
+from lib.scheduler import Scheduler
 
-if os.path.exists(os.path.abspath(os.path.join(os.path.dirname(__file__), 'mdmpy.db'))):
-    os.remove(os.path.abspath(os.path.join(os.path.dirname(__file__), 'mdmpy.db')))
-    print("DB removed");
 
+def removeDb():
+    if os.path.exists(os.path.abspath(os.path.join(os.path.dirname(__file__), 'mdmpy.db'))):
+        os.remove(os.path.abspath(os.path.join(os.path.dirname(__file__), 'mdmpy.db')))
+        print("DB removed");
+
+# removeDb()
 initializeDatabase()
+scheduler = Scheduler.Instance()
 
 # this method returns HTML when a 404 (page not found error) is encountered.
 # You'll probably want to return custom HTML using Jinja2.
 def error_page_404(status, message, traceback, version):
     a = cherrypy.request
     b = cherrypy.url()
-    return "404 Error!"
+    return "404 Error! How the heck did you got here?"
 
 
 # this returns an HTML error message when an exception is thrown in your code in production.
@@ -31,7 +35,7 @@ def error_page_404(status, message, traceback, version):
 def handle_error():
     cherrypy.response.status = 500
     cherrypy.response.body = [
-        "<html><body>Sorry, an error occured</body></html>".encode()
+        "<html><body>Oh crap...I have failed you master</body></html>".encode()
     ]
 
 

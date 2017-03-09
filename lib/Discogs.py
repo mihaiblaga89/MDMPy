@@ -6,19 +6,37 @@ Date : 14/02/2017
 '''
 
 import requests
-from lib.configuration import Cfg
 import urllib
+import json
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 
 class Request():
 
     @staticmethod
-    def get(q=""):
+    def request(params="", json=True):
         base_url = "https://api.spotify.com/v1/"
-        fields = "&type=track"
-        query = "search?q=" + urllib.quote_plus(q)
-
-        url = base_url + query + fields
+        url = base_url + params
         response = requests.get(url, verify=False)
+        if json:
+            return response.json()
+        else:
+            return response
 
-        return response.json()
+
+    @staticmethod
+    def get(q=""):
+        if not q:
+            raise Exception('No query provided')
+
+        return Request.request("search?q=" + urllib.quote_plus(q) + "&type=track")
+
+
+    @staticmethod
+    def getId(id=""):
+        if not id:
+            raise Exception('No ID provided')
+        return json.loads(Request.request('tracks/' + id, json=False).text)
+

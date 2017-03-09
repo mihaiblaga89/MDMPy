@@ -6,6 +6,7 @@ Date : 15/02/2017
 '''
 
 import cherrypy
+from cherrypy import tools
 import json
 from controllers.base import BaseController
 from peewee import IntegrityError
@@ -13,6 +14,14 @@ import sys
 
 
 class MusicController(BaseController):
+
+    @staticmethod
+    def _parse_args():
+        cl = cherrypy.request.headers['Content-Length']
+        raw_body = "http://test.com/a?" + cherrypy.request.body.read(int(cl))
+        from furl import furl
+        return furl(raw_body)
+
     @cherrypy.expose
     def index(self):
         return self.render_template('music/main.html')
@@ -26,14 +35,10 @@ class MusicController(BaseController):
     @cherrypy.expose
     def add(self):
         import models.dbtool as DB
-        cl = cherrypy.request.headers['Content-Length']
-        rawbody = "http://test.com/a?" + cherrypy.request.body.read(int(cl))
-        from furl import furl
-        f = furl(rawbody)
-        print f.args['title']
+        params = self._parse_args()
 
         try:
-            model = DB.Music(title=f.args['title'], ext_id=f.args['id'], allow_youtube=f.args['allow_youtube'], quality=f.args['quality'], artist=f.args['artist'], album=f.args['album'])
+            model = DB.Music(title=params.args['title'], ext_id=params.args['id'], allow_youtube=params.args['allow_youtube'], quality=params.args['quality'], artist=params.args['artist'], album=params.args['album'])
             model.save()
             return json.dumps({'success' : True})
         except IntegrityError as e:
@@ -43,4 +48,10 @@ class MusicController(BaseController):
             e = sys.exc_info()[0]
             print(e)
             raise
-            return json.dumps({'success': False})
+
+    @cherrypy.expose
+    @tools.json_out()
+    def yt_search(self):
+        from lib.youtube import YouTube
+        results = YouTube.search({"q" : 'dimitri vegas', "max_results" : 25})
+        return json.dumps(results)

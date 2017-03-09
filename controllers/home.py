@@ -1,11 +1,13 @@
 import cherrypy
 from controllers.base import BaseController
+import models.dbtool as DB
 
 
 class HomeController(BaseController):
     @cherrypy.expose
     def index(self):
-        return self.render_template('home/dashboard.html')
+        music = DB.Music.select()
+        return self.render_template('home/dashboard.html', template_vars={'music' : music})
 
     @cherrypy.expose
     def search(self, query=''):

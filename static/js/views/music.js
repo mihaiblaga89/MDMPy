@@ -16,7 +16,7 @@ $(document).ready(function() {
 
             if (result.success) {
 
-                console.log('enters')
+                console.log(result);
                 var data = result.data.tracks.items;
 
                 $('#searchResults').empty();
@@ -76,11 +76,11 @@ $(document).ready(function() {
                         var result = JSON.parse(response);
                         if (result.success) {
 
-                            alert('done');
+                            showNotification('done');
                         }
                         else {
 
-                            alert('sum-ting wong');
+                            showNotification('sum-ting wong');
                         }
                      });
                 })
