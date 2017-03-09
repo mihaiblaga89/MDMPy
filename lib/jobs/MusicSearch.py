@@ -10,8 +10,9 @@ import datetime
 from lib.Discogs import Request as Discogs
 import sys
 import pprint
-import json
 import traceback
+from lib.indexers import torznab
+
 
 
 def MusicSearch():
@@ -25,7 +26,8 @@ def MusicSearch():
                 details = Discogs.getId(song.ext_id)
 
                 artistalbum = details['album']['artists'][0]['name'] + ' ' + details['album']['name']
-                print artistalbum
+
+                indexerdata = torznab.Torznab.search(artistalbum)
             except:
                 e = sys.exc_info()[0]
                 print(pprint.pprint(vars(e)))

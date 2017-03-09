@@ -7,10 +7,13 @@ from controllers.home import *
 from controllers.settings import *
 from controllers.music import *
 from site_config import SiteConfig
-from controllers.auth import require, member_of, name_is
 from models.loghelper import Logger
 from models.dbtool import *
-from lib.scheduler import Scheduler
+from lib.jobs.MusicSearch import *
+
+
+cherrypy.engine.housekeeper = cherrypy.process.plugins.BackgroundTask(60, MusicSearch)
+cherrypy.engine.housekeeper.start()
 
 
 def removeDb():
@@ -20,7 +23,6 @@ def removeDb():
 
 # removeDb()
 initializeDatabase()
-scheduler = Scheduler.Instance()
 
 # this method returns HTML when a 404 (page not found error) is encountered.
 # You'll probably want to return custom HTML using Jinja2.

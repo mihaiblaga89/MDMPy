@@ -7,7 +7,7 @@ Date : 15/02/2017
 
 import cherrypy
 from controllers.base import BaseController
-from lib.scheduler import Scheduler
+# import run
 import models.dbtool as DB
 from peewee import IntegrityError
 import json
@@ -17,11 +17,11 @@ class SettingsController(BaseController):
     @cherrypy.expose
     def index(self):
 
-        jobs = Scheduler.Instance().scheduler.get_all()
+        # jobs = run.scheduler.Instance().scheduler.get_all()
 
         indexers = DB.Indexers.select()
 
-        return self.render_template('settings/main.html', template_vars={'jobs' : jobs, 'indexers' : indexers})
+        return self.render_template('settings/main.html', template_vars={'jobs' : {}, 'indexers' : indexers})
 
     @cherrypy.expose
     def shutdown(self):
