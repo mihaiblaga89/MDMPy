@@ -50,3 +50,10 @@
     right: 5px;
     top: 5px;
 }
+
+.brand-logo {
+    background-image: url('/static/images/MDMPy_logo.png');
+    background-repeat : no-repeat;
+    width: 100px;
+    height: 80%;
+}

@@ -10,6 +10,7 @@ from site_config import SiteConfig
 from models.loghelper import Logger
 from models.dbtool import *
 from lib.jobs.MusicSearch import *
+from controllers.auth import require, member_of, name_is
 
 
 cherrypy.engine.housekeeper = cherrypy.process.plugins.BackgroundTask(60, MusicSearch)

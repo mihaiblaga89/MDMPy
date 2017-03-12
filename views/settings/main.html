@@ -4,12 +4,12 @@
 
 {% block body %}
 <div class="pure-g">
-    <button id="restart" class="pure-u-2 pure-button button-xlarge button-secondary"><i class="fa fa-undo"></i> Restart</button>
-    <button id="shutdown" class="pure-u-2 pure-button button-xlarge button-error"><i class="fa fa-power-off"></i> Shutdown</button>
+    <button id="restart" class="waves-effect waves-light btn"><i class="fa fa-undo"></i> Restart</button>
+    <button id="shutdown" class="waves-effect waves-light btn"><i class="fa fa-power-off"></i> Shutdown</button>
 </div>
 
 <h3>Services</h3>
-    <table class="pure-table pure-table-bordered">
+    <table class="bordered">
     <thead>
         <tr>
             <th>Scheduler</th>
@@ -38,52 +38,70 @@
 
 <h3>Indexers</h3>
 <div class="indexers repeat">
-    <table class="wrapper" width="100%">
+    <table class="wrapper">
         <thead>
             <tr>
-                <td width="10%" colspan="4"><i class="fa fa-plus-circle add"></i></td>
+                <td><i class="fa fa-plus-circle add"></i></td>
             </tr>
         </thead>
         <tbody class="container">
         <tr class="template row">
-            <td width="40%">
-                <input class="url" type="text" name="input-field[(row-count-placeholder)]" placeholder="URL"/>
+            <td >
+                <div class="input-field">
+                    <input id="url" class="url" type="text" name="input-field[(row-count-placeholder)]" />
+                    <label for="url">URL</label>
+                </div>
             </td>
 
-            <td width="45%">
-                <input class="api_key" type="text" name="input-field[(row-count-placeholder)]" placeholder="API Key"/>
+            <td >
+                <div class="input-field">
+                    <input id="api_key" class="api_key" type="text" name="input-field[(row-count-placeholder)]" />
+                    <label for="api_key">API Key</label>
+                </div>
             </td>
 
-            <td width="10%">
-                <select class="type">
-                    <option value="torznab">Torznab</option>
-                </select>
+            <td class="s1">
+                <div class="input-field">
+                    <select id="type" class="type">
+                        <option value="torznab">Type</option>
+                        <option value="torznab">Torznab</option>
+                    </select>
+                </div>
             </td>
 
-            <td width="5%"><i class="fa fa-minus-circle remove"></i></td>
+            <td><i class="fa fa-minus-circle remove"></i></td>
         </tr>
         {% for indexer in indexers %}
          <tr class="row">
-            <td width="40%">
-                <input class="url" type="text" name="input-field" placeholder="URL" value="{{indexer.url}}"/>
+            <td>
+                <div class="input-field">
+                    <input id="url" class="url" type="text" name="input-field[(row-count-placeholder)]" value="{{indexer.url}}" />
+                    <label for="url">URL</label>
+                </div>
             </td>
 
-            <td width="45%">
-                <input class="api_key" type="text" name="input-field" placeholder="API Key" value="{{indexer.api_key}}"/>
+            <td>
+                <div class="input-field">
+                    <input id="api_key" class="api_key" type="text" name="input-field[(row-count-placeholder)]" value="{{indexer.api_key}}"/>
+                    <label for="api_key">API Key</label>
+                </div>
             </td>
 
-            <td width="10%">
-                <select class="type">
-                    <option value="torznab">Torznab</option>
-                </select>
+            <td class="s1">
+                <div class="input-field">
+                    <select id="type" class="type">
+                        <option value="torznab">Type</option>
+                        <option value="torznab">Torznab</option>
+                    </select>
+                </div>
             </td>
 
-            <td width="5%"><i class="fa fa-minus-circle remove"></i></td>
+            <td><i class="fa fa-minus-circle remove"></i></td>
         </tr>
         {% endfor %}
         </tbody>
     </table>
-    <button id="save" class="pure-button"><i class="fa fa-floppy-o"></i> Save</button>
+    <button id="save" class="waves-effect waves-light btn"><i class="fa fa-floppy-o"></i> Save</button>
 </div>
 
 {% endblock %}

@@ -28,6 +28,10 @@ $(document).ready(function(){
                 if (url != "") {
                     itemstodelete.push(url);
                 }
+            },
+            after_add : function(new_row) {
+                $(new_row).find('.type').last().material_select();
+//                $('select').material_select();
             }
         });
     });
@@ -73,5 +77,10 @@ $(document).ready(function(){
         }
 
 
+    });
+
+    $('tr.row:not(.template)').find('select').each(function() {
+        console.log(this);
+        $(this).material_select();
     });
 })

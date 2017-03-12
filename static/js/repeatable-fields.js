@@ -18,7 +18,7 @@
 			template: '.template',
 			is_sortable: true,
 			before_add: null,
-			after_add: after_add,
+			after_add: null,
 			before_remove: null,
 			after_remove: null,
 			sortable_options: null,
@@ -63,9 +63,7 @@
 
 					var new_row = $(row_template).show().appendTo(container);
 
-					if(typeof settings.after_add === 'function') {
-						settings.after_add(container, new_row, after_add);
-					}
+					settings.after_add(container, new_row, after_add);
 
 					// The new row might have it's own repeatable field wrappers so initialize them too
 					initialize(new_row);
@@ -109,6 +107,8 @@
 			});
 
 			$(container).attr('data-rf-row-count', row_count);
+
+			settings.after_add && settings.after_add(new_row);
 		}
 	}
 })(jQuery);
