@@ -2,7 +2,7 @@ language: python
 python:
 - '2.7'
 install: pip install -r requirements.txt
-script: python test.py
+script: coverage run test.py
 before_install:
   - pip install codecov
   - pip install coverage
@@ -10,5 +10,4 @@ notifications:
   slack:
     secure: BTvjQvk3Ze/+fCHAnM03HfF0lLSdGQ6Db86f+l0Jv+GqbFb3GSfqarqnEAdKUGvmGdRfJqPd28kxOWtjFhhjMXIb3XrnVavk7vdVa6uaIhsJ1t2v0PIfBxOK/uUyE0BnQw43qo4P2oyb1btE7963DqAIUONutX37SHUS6R73rrrIwIpzij42qKmZ3KH8BTpyvS8Fz1ynyLZaDPKvGGc560ZCsLwacF6Ot/MaF+WIkXqdP82ZjY063yOdF1+lRbFkySaB39JTJ+vHA5YAb24+mS4U9KH3nFzielhilovOim9+ynNkAUv7R3J6LT6zZS5KXyu+Ym9pGdn+Kj4fp8+8ywzZ0X0sJ+J97G6RabKI7MD/DhnssT8AO/eucOpfLKeFgwCUyUIqKm37a8ncSH234tt2KyHcsZcAagS/worM2xKRnSRhUDtSgzCYK3lxSR5J7ZMP7FeZBeUrw47okNqlTqIrj3tFqVeg7IjBwlpMG25+sPJddxa4Bnsgd7lPRrrEhr6LanmyQJuHSW5/XHCYy3azLLXX7luFzZed1vI5me23EpLLY8MAONtoM0xECvFM4RqkNxSHj9RCZ0+kJY4ZasQ7r0Ao9HJ7f34G82tQP809d/KIeuHpd+xV1g+gj9KWlSP/DOxsKI3+MBRQVKSu56IDdA0VTJ/4Bu7p4hHc/w8=
 after_success:
-  - coverage run tests.py
   - codecov
