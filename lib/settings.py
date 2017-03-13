@@ -11,6 +11,7 @@ from peewee import IntegrityError
 
 class Settings:
 
+    # Inserts or updates a setting in the DB. A settings table is used with a key-value arch
     @staticmethod
     def set(key="", value=""):
         if not key or not value:
@@ -28,7 +29,7 @@ class Settings:
             traceback.print_exc()
             raise Exception("Can't add setting")
 
-
+    # Getting the setting from the db
     @staticmethod
     def get(key="", default=None):
         if not key:

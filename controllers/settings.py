@@ -13,11 +13,11 @@ import json
 
 
 class SettingsController(BaseController):
+
     @cherrypy.expose
     def index(self):
 
-        # jobs = run.scheduler.Instance().scheduler.get_all()
-
+        #@TODO display the status of the indexers
         indexers = DB.Indexers.select()
 
         return self.render_template('settings/main.html', template_vars={'jobs' : {}, 'indexers' : indexers})
@@ -25,14 +25,11 @@ class SettingsController(BaseController):
     @cherrypy.expose
     def shutdown(self):
 
-        import cherrypy
-        # cherrypy.engine.stop()
         cherrypy.engine.exit()
 
     @cherrypy.expose
     def restart(self):
 
-        import cherrypy
         cherrypy.engine.restart()
 
     @cherrypy.expose

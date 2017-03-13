@@ -10,6 +10,7 @@ from lib.configuration import Cfg
 import urllib
 
 
+# @TODO make a better version of this
 class Request():
 
     @staticmethod

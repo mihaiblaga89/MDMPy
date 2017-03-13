@@ -12,8 +12,10 @@ class JinjaHelper:
         try:
             env = Environment(loader=FileSystemLoader(['{0}/views'.format(self.base_path),
                                                        '{0}/views/{1}'.format(self.base_path, path)]))
+
+            # Setting the version
             env.globals['version'] = Settings.get('version')
-            print(env.globals['version'])
+
             return env.get_template(path)
         except TemplateNotFound:
             return None

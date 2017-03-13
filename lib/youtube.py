@@ -45,17 +45,7 @@ class YouTube():
     def search(options):
         try:
             return YouTube._search(options)
-        except HttpError, e:
+        except HttpError as e:
             print("An HTTP error %d occurred:\n%s" % (e.resp.status, e.content))
             return {"success" : False}
 
-
-# if __name__ == "__main__":
-#   argparser.add_argument("--q", help="Search term", default="Google")
-#   argparser.add_argument("--max-results", help="Max results", default=25)
-#   args = argparser.parse_args()
-#
-#   try:
-#     YouTube.search(args)
-#   except HttpError, e:
-#     print "An HTTP error %d occurred:\n%s" % (e.resp.status, e.content)

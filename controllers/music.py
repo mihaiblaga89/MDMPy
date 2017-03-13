@@ -11,12 +11,15 @@ import json
 from controllers.base import BaseController
 from peewee import IntegrityError
 import sys
+import lib.Discogs as Discogs
+import models.dbtool as DB
 
 
 class MusicController(BaseController):
 
     @staticmethod
     def _parse_args():
+
         cl = cherrypy.request.headers['Content-Length']
         raw_body = "http://test.com/a?" + cherrypy.request.body.read(int(cl))
         from furl import furl
@@ -24,17 +27,18 @@ class MusicController(BaseController):
 
     @cherrypy.expose
     def index(self):
+
         return self.render_template('music/main.html')
 
     @cherrypy.expose
     def search(self, query=""):
-        import lib.Discogs as Discogs
+
         result = Discogs.Request.get(q=query)
         return json.dumps({'success': True, 'data': result})
 
     @cherrypy.expose
     def add(self):
-        import models.dbtool as DB
+
         params = self._parse_args()
 
         try:
@@ -52,6 +56,7 @@ class MusicController(BaseController):
     @cherrypy.expose
     @tools.json_out()
     def yt_search(self):
+
         from lib.youtube import YouTube
         results = YouTube.search({"q" : 'dimitri vegas', "max_results" : 25})
         return json.dumps(results)

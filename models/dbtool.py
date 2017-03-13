@@ -2,8 +2,13 @@ from peewee import *
 
 db = SqliteDatabase('mdmpy.db')
 
+'''
+Defining the schema for the db, WIP
+'''
+
 
 class Torrents(Model):
+
     title = CharField()
 
     class Meta:
@@ -11,6 +16,7 @@ class Torrents(Model):
 
 
 class Music(Model):
+
     title = CharField()
     artist = CharField()
     album = CharField(null=True)
@@ -27,6 +33,7 @@ class Music(Model):
 
 
 class Games(Model):
+
     title = CharField()
     ext_id = CharField(unique=True)
     downloaded = BooleanField(default=False)
@@ -38,6 +45,7 @@ class Games(Model):
 
 
 class Books(Model):
+
     title = CharField()
     ext_id = CharField(unique=True)
     downloaded = BooleanField(default=False)
@@ -49,6 +57,7 @@ class Books(Model):
 
 
 class Settings(Model):
+
     key = CharField(unique=True)
     value = CharField()
 
@@ -57,6 +66,7 @@ class Settings(Model):
 
 
 class Indexers(Model):
+
     url = CharField(unique=True)
     type = CharField(default="torznab")
     api_key = CharField(null=True)
@@ -66,6 +76,7 @@ class Indexers(Model):
 
 
 def initializeDatabase():
+
     db.connect()
     if not Music.table_exists():
         db.create_tables([Music, Games, Books, Settings, Torrents, Indexers])

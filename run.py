@@ -13,20 +13,26 @@ from lib.jobs.MusicSearch import *
 from lib.settings import Settings
 from controllers.auth import require, member_of, name_is
 
-
+# starting the tasks
 cherrypy.engine.housekeeper = cherrypy.process.plugins.BackgroundTask(60, MusicSearch)
 cherrypy.engine.housekeeper.start()
 
+'''
+ Function for dev, to delete the database if you change something in the db schema
+'''
 
-def removeDb():
+
+def remove_db():
     if os.path.exists(os.path.abspath(os.path.join(os.path.dirname(__file__), 'mdmpy.db'))):
         os.remove(os.path.abspath(os.path.join(os.path.dirname(__file__), 'mdmpy.db')))
         print("DB removed");
 
-# removeDb()
+# remove_db()
 initializeDatabase()
 
+# setting the version
 Settings.set('version', '0.1')
+
 
 # this method returns HTML when a 404 (page not found error) is encountered.
 # You'll probably want to return custom HTML using Jinja2.
@@ -123,14 +129,12 @@ def start_server():
         }
     })
 
+    # starting it
     cherrypy.engine.start()
     cherrypy.engine.block()
 
-    # this return value is used by the WSGI server in prod
-    return cherrypy.tree
-
 
 try:
-    application = start_server()
+    start_server()
 except Exception as ex:
     Logger.error('Error during run', ex)

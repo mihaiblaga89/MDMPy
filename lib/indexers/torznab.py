@@ -13,12 +13,15 @@ try:
 except ImportError:
     import xml.etree.ElementTree as ET
 
+# Disable urllib3 ssl warnings
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+
 
 class Torznab:
 
     @staticmethod
     def _request(url):
+
         try:
             response = requests.get(url)
             tree = ET.fromstring(response.content)
