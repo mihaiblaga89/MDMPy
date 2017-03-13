@@ -7,7 +7,6 @@ Date : 15/02/2017
 
 import cherrypy
 from controllers.base import BaseController
-# import run
 import models.dbtool as DB
 from peewee import IntegrityError
 import json

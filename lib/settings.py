@@ -21,8 +21,9 @@ class Settings:
             newrecord.save()
         except IntegrityError:
             update = DB.Settings.get(DB.Settings.key == key)
-            update.value = value
-            update.save()
+            if update.value != value:
+                update.value = value
+                update.save()
         except:
             traceback.print_exc()
             raise Exception("Can't add setting")
@@ -35,7 +36,7 @@ class Settings:
 
         try:
             result = DB.Settings.get(DB.Settings.key == key)
-            return result
+            return result.value
         except DB.Settings.DoesNotExist:
             return default
         except:

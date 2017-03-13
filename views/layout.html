@@ -19,31 +19,42 @@
 </head>
 <body>
 
-<div>
-    <div class="">
         <nav>
-            <div class="nav-wrapper valign-wrapper">
-                <div class="logo-wrapper valign-wrapper">
+            <div class="nav-wrapper blue-grey lighten-3">
+                <!--<div class="logo-wrapper valign-wrapper">-->
                     <a href="#" class="brand-logo valign"></a>
-                </div>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="/dashboard" class="pure-menu-link">Dashboard</a></li>
-                    <li><a href="/games" class="pure-menu-link">Games</a></li>
-                    <li><a href="/books" class="pure-menu-link">Books</a></li>
-                    <li><a href="/music" class="pure-menu-link">Music</a></li>
-                    <li><a href="/settings" class="pure-menu-link">Settings</a></li>
+                <!--</div>-->
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars"></i></a>
+                <ul id="nav-desktop" class="right hide-on-med-and-down">
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/games">Games</a></li>
+                    <li><a href="/books">Books</a></li>
+                    <li><a href="/music">Music</a></li>
+                    <li><a href="/settings">Settings</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/games">Games</a></li>
+                    <li><a href="/books">Books</a></li>
+                    <li><a href="/music">Music</a></li>
+                    <li><a href="/settings">Settings</a></li>
                 </ul>
             </div>
         </nav>
-    </div>
-
-    <div id="main">
+    <div id="main" class="container">
 
         <div class="content">
             {% block body %}{% endblock %}
         </div>
     </div>
-</div>
+
+        <footer class="page-footer blue-grey lighten-3">
+          <div class="footer-copyright">
+            <div class="container center-align">
+            Version : {{version}}
+            </div>
+          </div>
+        </footer>
 
 
 <script src="/static/js/jquery-3.1.1.min.js"></script>

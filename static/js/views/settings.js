@@ -40,9 +40,10 @@ $(document).ready(function(){
 
         $('.row').not('.template').each(function(element) {
 
-            type = $(this).find('.type').val();
+            type = $(this).find('.select-dropdown').val().toLowerCase();
             url = $(this).find('.url').val();
             api_key = $(this).find('.api_key').val();
+            console.log(type, url, api_key);
 
             $.ajax('/settings/addIndexer?type=' + type + '&url=' + url + '&api_key=' + api_key).done(function(response){
 

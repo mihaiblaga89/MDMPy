@@ -10,6 +10,7 @@ from site_config import SiteConfig
 from models.loghelper import Logger
 from models.dbtool import *
 from lib.jobs.MusicSearch import *
+from lib.settings import Settings
 from controllers.auth import require, member_of, name_is
 
 
@@ -24,6 +25,8 @@ def removeDb():
 
 # removeDb()
 initializeDatabase()
+
+Settings.set('version', '0.1')
 
 # this method returns HTML when a 404 (page not found error) is encountered.
 # You'll probably want to return custom HTML using Jinja2.
@@ -83,7 +86,8 @@ def start_server():
         # this is a custom tool for handling authorization (see auth.py)
         'tools.auth.on': True,
         'tools.auth.priority': 52,
-        'tools.sessions.locking': 'early'
+        'tools.sessions.locking': 'early',
+
 
         # uncomment the below line to use the tool written to connect to the database
         # 'tools.db.on': True
@@ -94,10 +98,16 @@ def start_server():
 
     cherrypy.config.update(server_config)
 
+
     # this will let us access localhost:3005/Home or localhost:3005/Home/Index
     cherrypy.tree.mount(HomeController(), '/dashboard')
     cherrypy.tree.mount(SettingsController(), '/settings')
     cherrypy.tree.mount(MusicController(), '/music')
+
+    # remove access logging
+    access_log = cherrypy.log.access_log
+    for handler in tuple(access_log.handlers):
+        access_log.removeHandler(handler)
 
     # this will map localhost:3005/
     cherrypy.tree.mount(RootController(), '/', {

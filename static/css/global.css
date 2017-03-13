@@ -54,6 +54,13 @@
 .brand-logo {
     background-image: url('/static/images/MDMPy_logo.png');
     background-repeat : no-repeat;
-    width: 100px;
-    height: 80%;
+    background-size: contain;
+    background-position: center center;
+    width: 170px;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.nav-wrapper .fa-bars {
+    font-size: 30px;
 }

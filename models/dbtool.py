@@ -14,6 +14,7 @@ class Music(Model):
     title = CharField()
     artist = CharField()
     album = CharField(null=True)
+    album_image = CharField(null=True)
     ext_id = CharField(unique=True)
     downloaded = BooleanField(default=False)
     local_path = CharField(null=True)

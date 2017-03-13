@@ -5,29 +5,23 @@
 
 {% block body %}
 <h3>Music</h3>
-    <table class="pure-table pure-table-bordered">
-    <thead>
-        <tr>
-            <th>Artist</th>
-            <th>Song</th>
-            <th>Album</th>
-            <th>Downloaded</th>
-        </tr>
-    </thead>
-
-    <tbody>
-     {% for song in music %}
-        <tr>
-            <td>{{song.artist}}</td>
-            <td>{{song.title}}</td>
-            <td>{{song.album}}</td>
-            <td>{{ 'Yes' if song.downloaded else 'No' }}</td>
-        </tr>
-     {% endfor %}
-    </tbody>
-</table>
-
-<div id="searchResults" class="pure-g"></div>
+    <div class="row">
+        {% for song in music %}
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+                <img src="{{song.album_image}}">
+                <span class="card-title flow-text">{{song.artist}} - {{song.title}}</span>
+            </div>
+            <div class="card-action">
+                <a class="tooltipped {{'green' if song.downloaded else 'grey'}}-text" data-position="bottom" data-delay="50" data-tooltip="Downloaded: {{'Yes' if song.downloaded else 'No'}}"><i class="fa fa-cloud-download"></i></a>
+                <a class="tooltipped {{'green' if song.torrent else 'grey'}}-text" data-position="bottom" data-delay="50" data-tooltip="Torrent: {{'Yes' if song.torrent else 'Not snatched'}}"><i class="fa fa-file-code-o"></i></a>
+                <a class="tooltipped {{'green' if song.local_path else 'grey'}}-text" data-position="bottom" data-delay="50" data-tooltip="Location: {{'Yes' if song.local_path else 'No'}}"><i class="fa fa-files-o"></i></a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
 
 {% endblock %}
 

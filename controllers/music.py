@@ -38,7 +38,7 @@ class MusicController(BaseController):
         params = self._parse_args()
 
         try:
-            model = DB.Music(title=params.args['title'], ext_id=params.args['id'], allow_youtube=params.args['allow_youtube'], quality=params.args['quality'], artist=params.args['artist'], album=params.args['album'])
+            model = DB.Music(title=params.args['title'], ext_id=params.args['id'], allow_youtube=params.args['allow_youtube'], quality=params.args['quality'], artist=params.args['artist'], album=params.args['album'], album_image=params.args['album_image'])
             model.save()
             return json.dumps({'success' : True})
         except IntegrityError as e:

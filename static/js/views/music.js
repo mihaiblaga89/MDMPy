@@ -25,7 +25,7 @@ $(document).ready(function() {
 
                     var imageurl = data[i].album.images[0].url;
 
-                    var injection = '<div data-album="' + data[i].album.name + '" data-id="' + data[i].id + '" data-name="' + data[i].name + '" data-artist="' + data[i].artists[0].name + '" class="searchResult pure-u-1 pure-u-md-1-3"> \
+                    var injection = '<div data-album-image="' + imageurl + '" data-album="' + data[i].album.name + '" data-id="' + data[i].id + '" data-name="' + data[i].name + '" data-artist="' + data[i].artists[0].name + '" class="searchResult pure-u-1 pure-u-md-1-3"> \
                         <img src="' + imageurl + '" class="pure-img searchResult-image"/> \
                         <div class="searchResult-title"> \
                             <span>' + data[i].artists[0].name + ' - ' + data[i].name + '</span> \
@@ -57,13 +57,15 @@ $(document).ready(function() {
                     var id = $(this).closest('.searchResult').data('id');
                     var artist = $(this).closest('.searchResult').data('artist');
                     var album = $(this).closest('.searchResult').data('album');
+                    var album_image = $(this).closest('.searchResult').data('album-image');
                     var data = {
                         title : title,
                         id: id,
                         allow_youtube : allow_youtube,
                         quality : quality,
                         artist : artist,
-                        album : album
+                        album : album,
+                        album_image : album_image
                     }
 
                     $.ajax({

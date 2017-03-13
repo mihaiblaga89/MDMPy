@@ -1,5 +1,6 @@
 from jinja2 import Environment, FileSystemLoader, TemplateNotFound
 from site_config import SiteConfig
+from lib.settings import Settings
 from models.loghelper import Logger
 
 
@@ -11,6 +12,8 @@ class JinjaHelper:
         try:
             env = Environment(loader=FileSystemLoader(['{0}/views'.format(self.base_path),
                                                        '{0}/views/{1}'.format(self.base_path, path)]))
+            env.globals['version'] = Settings.get('version')
+            print(env.globals['version'])
             return env.get_template(path)
         except TemplateNotFound:
             return None
