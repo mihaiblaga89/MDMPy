@@ -14,6 +14,7 @@ import cherrypy
 
 from controllers.home import HomeController
 from controllers.settings import SettingsController
+from controllers.music import MusicController
 from cptest import BaseCherryPyTestCase
 
 
@@ -38,6 +39,7 @@ def setUpModule():
     cherrypy.config.update(server_config)
     cherrypy.tree.mount(HomeController(), '/dashboard')
     cherrypy.tree.mount(SettingsController(), '/settings')
+    cherrypy.tree.mount(MusicController(), '/music')
     cherrypy.engine.start()
 setup_module = setUpModule
 
