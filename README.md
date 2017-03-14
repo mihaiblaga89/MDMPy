@@ -35,6 +35,7 @@
 - [x] Games Search
 - [ ] Books Search
 - [x] Torznab API Indexers support
+- [ ] Torrent clients integration (Transmission, deluge, etc)
 - [ ] Custom Indexer support
 - [ ] Compatibility with Windows, UNIX, OSX
 - [ ] Music Management
@@ -71,4 +72,9 @@ License
 ----
 
 ![alt text](https://m7i.org/include/images/gpl-v3-logo.png "License")
+
+Links
+----
+
+[LegoCloud](https://www.legocloud.org)
 
