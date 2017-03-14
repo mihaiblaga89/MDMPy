@@ -17,9 +17,12 @@ from controllers.settings import SettingsController
 from controllers.music import MusicController
 from cptest import BaseCherryPyTestCase
 import json
+from models.dbtool import *
 
 
 def setUpModule():
+
+    initializeDatabase()
 
     cherrypy.site = {
         'base_path': os.getcwd()
