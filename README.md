@@ -35,6 +35,7 @@
 - [x] Games Search
 - [ ] Books Search
 - [x] Torznab API Indexers support
+- [ ] Torrent clients integration (Transmission, deluge, etc)
 - [ ] Custom Indexer support
 - [ ] Compatibility with Windows, UNIX, OSX
 - [ ] Music Management
