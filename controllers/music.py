@@ -30,8 +30,9 @@ class MusicController(BaseController):
 
         return self.render_template('music/main.html')
 
+    @classmethod
     @cherrypy.expose
-    def search(self, query=""):
+    def search(cls, query=""):
 
         result = Discogs.Request.get(q=query)
         return json.dumps({'success': True, 'data': result})

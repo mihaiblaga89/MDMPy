@@ -17,7 +17,7 @@ class SettingsController(BaseController):
     @cherrypy.expose
     def index(self):
 
-        #@TODO display the status of the indexers
+        # @TODO display the status of the indexers
         indexers = DB.Indexers.select()
 
         return self.render_template('settings/main.html', template_vars={'jobs' : {}, 'indexers' : indexers})
@@ -32,8 +32,9 @@ class SettingsController(BaseController):
 
         cherrypy.engine.restart()
 
+    @classmethod
     @cherrypy.expose
-    def addIndexer(self, type=None, url=None, api_key=None):
+    def addIndexer(cls, type=None, url=None, api_key=None):
 
         if not url:
             return json.dumps({"success": False, "error": "url"})
@@ -48,8 +49,9 @@ class SettingsController(BaseController):
         except IntegrityError:
             return json.dumps({"success" : False, "error" : "integrity"})
 
+    @classmethod
     @cherrypy.expose
-    def removeIndexer(self, url=None):
+    def removeIndexer(cls, url=None):
 
         if not url:
             return json.dumps({"success": False, "error": "url"})

@@ -16,6 +16,7 @@ from controllers.home import HomeController
 from controllers.settings import SettingsController
 from controllers.music import MusicController
 from cptest import BaseCherryPyTestCase
+import json
 
 
 def setUpModule():
@@ -63,6 +64,10 @@ class TestCherryPyApp(BaseCherryPyTestCase):
     def test_music(self):
         response = self.request(path='/music/', app_path='/music')
         self.assertEqual(response.output_status, '200 OK')
+
+    def test_music_search(self):
+        response = MusicController.search(query="queen")
+        self.assertEqual(json.loads(response)['success'], True)
 
     # def test_echo(self):
     #     response = self.request('/echo', msg="hey there")

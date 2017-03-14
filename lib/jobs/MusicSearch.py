@@ -10,7 +10,6 @@ import datetime
 from lib.Discogs import Request as Discogs
 import sys
 import pprint
-import traceback
 from lib.indexers import torznab
 
 
