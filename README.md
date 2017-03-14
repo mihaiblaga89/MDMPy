@@ -72,3 +72,8 @@ License
 
 ![alt text](https://m7i.org/include/images/gpl-v3-logo.png "License")
 
+Links
+----
+
+[LegoCloud](https://www.legocloud.org)
+
