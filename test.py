@@ -58,6 +58,10 @@ class TestCherryPyApp(BaseCherryPyTestCase):
         response = self.request(path='/settings/', app_path='/settings')
         self.assertEqual(response.output_status, '200 OK')
 
+    def test_music(self):
+        response = self.request(path='/music/', app_path='/music')
+        self.assertEqual(response.output_status, '200 OK')
+
     # def test_echo(self):
     #     response = self.request('/echo', msg="hey there")
     #     self.assertEqual(response.output_status, '200 OK')
