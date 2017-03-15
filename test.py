@@ -72,6 +72,15 @@ class TestCherryPyApp(BaseCherryPyTestCase):
         response = MusicController.search(query="queen")
         self.assertEqual(json.loads(response)['success'], True)
 
+    def test_indexer_add(self):
+        response = SettingsController.addIndexer(type='torznab', url='test', api_key='test', testcase=True)
+        self.__class__.indexerID = response.id
+        self.assertIsInstance(response.id, int)
+
+    def test_indexer_remove(self):
+        response = SettingsController.removeIndexer(self.__class__.indexerID, True)
+        self.assertTrue(response)
+
     # def test_echo(self):
     #     response = self.request('/echo', msg="hey there")
     #     self.assertEqual(response.output_status, '200 OK')

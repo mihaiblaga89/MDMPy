@@ -34,7 +34,7 @@ class SettingsController(BaseController):
 
     @classmethod
     @cherrypy.expose
-    def addIndexer(cls, type=None, url=None, api_key=None, id=""):
+    def addIndexer(cls, type=None, url=None, api_key=None, id="", testcase=False):
 
         if not url:
             return json.dumps({"success": False, "error": "url"})
@@ -57,13 +57,23 @@ class SettingsController(BaseController):
             try:
                 indexer = DB.Indexers(url=url, type=type, api_key=api_key)
                 indexer.save()
+
+                # Just for unit testing. Return the instance so we can go on with the tests
+                if testcase:
+                    return indexer
+
                 return json.dumps({"success": True})
             except IntegrityError:
+
+                # Just for unit testing. Return the instance so we can go on with the tests
+                if testcase:
+                    return False
+
                 return json.dumps({"success" : False, "error" : "integrity"})
 
     @classmethod
     @cherrypy.expose
-    def removeIndexer(cls, id=None):
+    def removeIndexer(cls, id=None, testcase=False):
 
         if not id:
             return json.dumps({"success": False, "error": "id"})
@@ -71,6 +81,17 @@ class SettingsController(BaseController):
         try:
             query = DB.Indexers.delete().where(DB.Indexers.id == id)
             query.execute()
+
+            # Just for unit testing
+            if testcase:
+                return True
+
             return json.dumps({"success": True})
         except IntegrityError:
+
+            # Just for unit testing
+            if testcase:
+                return False
+
             return json.dumps({"success": False, "error": "integrity"})
+
