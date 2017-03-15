@@ -24,9 +24,8 @@ $(document).ready(function(){
             row_count_placeholder: '(row-count-placeholder)',
             is_sortable: false,
             before_remove : function(container, row){
-                var url = $(row).find('.url').val();
-                if (url != "") {
-                    itemstodelete.push(url);
+                if ($(row).data('id')) {
+                    itemstodelete.push($(row).data('id'));
                 }
             },
             after_add : function(new_row) {
@@ -40,20 +39,31 @@ $(document).ready(function(){
 
         $('.row').not('.template').each(function(element) {
 
-            type = $(this).find('.select-dropdown').val().toLowerCase();
-            url = $(this).find('.url').val();
-            api_key = $(this).find('.api_key').val();
-            console.log(type, url, api_key);
+            var type = $(this).find('.select-dropdown').val().toLowerCase();
+            var url = $(this).find('.url').val();
+            var api_key = $(this).find('.api_key').val();
+            var id = $(this).data('id');
+            if (!type || !url || !api_key) {
+                return
+            }
 
-            $.ajax('/settings/addIndexer?type=' + type + '&url=' + url + '&api_key=' + api_key).done(function(response){
+            $.ajax('/settings/addIndexer?type=' + type + '&url=' + url + '&api_key=' + api_key + '&id=' + id).done(function(response){
 
-                var data = JSON.parse(response);
-                console.log(data);
+                try {
+
+                    var data = JSON.parse(response);
+                }
+                catch(e){
+
+                    console.log(response);
+                }
 
                 if (data.success) {
+
                     showNotification('Settings saved');
                 }
                 else {
+
                     showNotification('Error');
                 }
             });
@@ -61,10 +71,9 @@ $(document).ready(function(){
 
         for (var i in itemstodelete) {
 
-            $.ajax('/settings/removeIndexer?url=' + itemstodelete[i]).done(function(response){
+            $.ajax('/settings/removeIndexer?id=' + itemstodelete[i]).done(function(response){
 
                 var data = JSON.parse(response);
-                console.log(data);
 
                 if (data.success) {
                     showNotification('Settings saved');
@@ -81,7 +90,7 @@ $(document).ready(function(){
     });
 
     $('tr.row:not(.template)').find('select').each(function() {
-        console.log(this);
+
         $(this).material_select();
     });
 })

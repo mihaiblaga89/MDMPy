@@ -8,10 +8,11 @@ import models.dbtool as DB
 import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 import urllib
-try:
-    import xml.etree.cElementTree as ET
-except ImportError:
-    import xml.etree.ElementTree as ET
+import sys
+import os.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../site-packages')))
+import xmltodict
+from pprint import pprint
 
 # Disable urllib3 ssl warnings
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
@@ -24,11 +25,9 @@ class Torznab:
 
         try:
             response = requests.get(url)
-            tree = ET.fromstring(response.content)
-            print(tree)
-            for elem in tree.iterfind('channel/item'):
-                print(elem.tag)
-                print(elem.attrib)
+            tree = xmltodict.parse(response)
+            pprint(tree)
+
         except requests.RequestException as e:
             print(e.message)
 

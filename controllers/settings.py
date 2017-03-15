@@ -34,7 +34,7 @@ class SettingsController(BaseController):
 
     @classmethod
     @cherrypy.expose
-    def addIndexer(cls, type=None, url=None, api_key=None):
+    def addIndexer(cls, type=None, url=None, api_key=None, id=""):
 
         if not url:
             return json.dumps({"success": False, "error": "url"})
@@ -42,22 +42,34 @@ class SettingsController(BaseController):
             return json.dumps({"success": False, "error": "type"})
         if type == "torznab" and not api_key:
             return json.dumps({"success": False, "error": "api_key"})
-        try:
-            indexer = DB.Indexers(url=url, type=type, api_key=api_key)
-            indexer.save()
-            return json.dumps({"success": True})
-        except IntegrityError:
-            return json.dumps({"success" : False, "error" : "integrity"})
+
+        if id and id != "undefined":
+            try:
+                update = DB.Indexers.get(DB.Indexers.id == id)
+                update.url = url
+                update.type = type
+                update.api_key = api_key
+                update.save()
+                return json.dumps({"success": True})
+            except:
+                return json.dumps({"success": False, "error": "update"})
+        else:
+            try:
+                indexer = DB.Indexers(url=url, type=type, api_key=api_key)
+                indexer.save()
+                return json.dumps({"success": True})
+            except IntegrityError:
+                return json.dumps({"success" : False, "error" : "integrity"})
 
     @classmethod
     @cherrypy.expose
-    def removeIndexer(cls, url=None):
+    def removeIndexer(cls, id=None):
 
-        if not url:
-            return json.dumps({"success": False, "error": "url"})
+        if not id:
+            return json.dumps({"success": False, "error": "id"})
 
         try:
-            query = DB.Indexers.delete().where(DB.Indexers.url == url)
+            query = DB.Indexers.delete().where(DB.Indexers.id == id)
             query.execute()
             return json.dumps({"success": True})
         except IntegrityError:

@@ -63,8 +63,9 @@
             <td class="s1">
                 <div class="input-field">
                     <select id="type" class="type">
-                        <option value="">Type</option>
-                        <option value="torznab">Torznab</option>
+                        <optgroup label="Torrents">
+                            <option value="torznab">Torznab</option>
+                        </optgroup>
                     </select>
                     <label>Type</label>
                 </div>
@@ -73,7 +74,7 @@
             <td><i class="fa fa-minus-circle remove"></i></td>
         </tr>
         {% for indexer in indexers %}
-         <tr class="row">
+         <tr class="row" data-id="{{indexer.id}}">
             <td>
                 <div class="input-field">
                     <input id="url" class="url" type="text" name="input-field[(row-count-placeholder)]" value="{{indexer.url}}" />
@@ -91,8 +92,9 @@
             <td class="s1">
                 <div class="input-field">
                     <select id="type" class="type" value="{{indexer.type}}">
-                        <option value="">Type</option>
-                        <option value="torznab">Torznab</option>
+                        <optgroup label="Torrents">
+                            <option value="torznab" {{'selected' if indexer.type == 'torznab' else ''}}>Torznab</option>
+                        </optgroup>
                     </select>
                     <label>Type</label>
                 </div>
