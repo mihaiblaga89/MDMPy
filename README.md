@@ -19,6 +19,7 @@
   - Cherrypy
   - Jinja2 template engine
   - peewee ORM
+  - unittest
   - IGDB API
   - Spotify API
   - YouTube API
