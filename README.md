@@ -1,4 +1,5 @@
 # MDMPy (Modular Download Manager)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/123ce4b041564c699671955db87819af)](https://www.codacy.com/app/mihaiblaga89/MDMPy?utm_source=github.com&utm_medium=referral&utm_content=mihaiblaga89/MDMPy&utm_campaign=badger)
 [![Build Status](https://travis-ci.org/mihaiblaga89/MDMPy.svg?branch=master)](https://travis-ci.org/mihaiblaga89/MDMPy)
 [![codecov](https://codecov.io/gh/mihaiblaga89/MDMPy/branch/master/graph/badge.svg)](https://codecov.io/gh/mihaiblaga89/MDMPy)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
